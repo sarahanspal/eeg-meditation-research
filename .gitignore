@@ -1,0 +1,11 @@
+data/
+*.npy
+*.fif
+*.edf
+*.bdf
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+config.py
