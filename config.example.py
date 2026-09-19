@@ -8,3 +8,4 @@ RAW_PATHS = {
 }
 
 PROCESSED_ROOT = f"{DATA_ROOT}/eeg-processed"
+FEATURES_HANDCRAFTED_ROOT = f"{DATA_ROOT}/features-handcrafted"

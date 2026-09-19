@@ -1,0 +1,7 @@
+dataset,classifier,mean_acc
+brandmeyer,kNN,0.519940504459865
+brandmeyer,RandomForest,0.5294549916867938
+brandmeyer,NaiveBayes,0.533713680699622
+sky,kNN,0.49324324324324326
+sky,RandomForest,0.49763513513513524
+sky,NaiveBayes,0.43040540540540545
