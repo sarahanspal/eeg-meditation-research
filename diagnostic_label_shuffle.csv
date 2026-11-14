@@ -1,0 +1,17 @@
+subject,labels,mean_accuracy
+sub-006,real,1.0
+sub-006,shuffled,0.5447293447293448
+sub-007,real,1.0
+sub-007,shuffled,0.4816129032258064
+sub-008,real,1.0
+sub-008,shuffled,0.4590804597701149
+sub-009,real,1.0
+sub-009,shuffled,0.6463768115942029
+sub-010,real,1.0
+sub-010,shuffled,0.4140860215053763
+sub-011,real,1.0
+sub-011,shuffled,0.43526881720430105
+sub-012,real,1.0
+sub-012,shuffled,0.5132478632478632
+sub-013,real,1.0
+sub-013,shuffled,0.4825287356321839

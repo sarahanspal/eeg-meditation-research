@@ -1,0 +1,15 @@
+dataset,condition,experience,n_subjects
+braboszcz,IMW1,experienced,55
+braboszcz,IMW1,novice,1
+braboszcz,IMW2,experienced,55
+braboszcz,IMW2,novice,1
+braboszcz,MED,experienced,55
+braboszcz,MED,novice,1
+brandmeyer,MED,experienced,10
+brandmeyer,MED,novice,5
+brandmeyer,MW,experienced,10
+brandmeyer,MW,novice,4
+sky,post,experienced,18
+sky,post,novice,19
+sky,pre,experienced,18
+sky,pre,novice,19

@@ -1,11 +1,35 @@
-data/
-*.npy
-*.fif
-*.edf
-*.bdf
+# --- Environments ---
+venv/
+.venv/
+.env
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-venv/
-.env
+
+# --- OS / editor ---
+.DS_Store
+nohup.out
+
+# --- Local config (machine-specific data paths; see config.example.py) ---
 config.py
+
+# --- Raw / intermediate EEG (lives outside the repo under DATA_ROOT) ---
+data/
+*.bdf
+*.edf
+*.set
+*.fdt
+*.fif
+*.npy
+*.npz
+*.mat
+
+# --- Large generated outputs (regenerable from scripts) ---
+results/harmonized/epoch_cache*/
+results/harmonized/preproc_variants/
+*_all_subjects_features.csv
+braboszcz_control_think1_vs_think2.csv
+results/harmonized/braboszcz_ctr_features.csv
+
+# --- Scratch ---
+def _clip*

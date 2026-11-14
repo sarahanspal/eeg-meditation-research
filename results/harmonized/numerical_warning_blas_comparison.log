@@ -1,0 +1,23 @@
+# numpy 2.0.2 (Accelerate) vs numpy 1.26.4 (OpenBLAS), 3 subjects x 3 schemes, identical features
+numpy 2.0.2
+total FP warnings: 135
+('braboszcz_sub-006', 'pooled', np.float64(0.627767), -272.1635395310512)
+('braboszcz_sub-006', 'within', np.float64(0.509973), -381.557016126337)
+('braboszcz_sub-006', 'cross', np.float64(0.624373), -421.0091047524775)
+('braboszcz_sub-007', 'pooled', np.float64(0.644274), 98.7974878530001)
+('braboszcz_sub-007', 'within', np.float64(0.607257), 241.21799018221245)
+('braboszcz_sub-007', 'cross', np.float64(0.550294), 38.13060198351894)
+('brandmeyer_sub-001', 'pooled', np.float64(0.551435), 8.187284788979806)
+('brandmeyer_sub-001', 'within', np.float64(0.464115), 1.946335922556849)
+('brandmeyer_sub-001', 'cross', np.float64(0.607656), 4.522063990328379)
+numpy 1.26.4
+total FP warnings: 0
+('braboszcz_sub-006', 'pooled', 0.627767, -272.18422089793756)
+('braboszcz_sub-006', 'within', 0.509973, -381.48429264248335)
+('braboszcz_sub-006', 'cross', 0.624373, -421.0091029549751)
+('braboszcz_sub-007', 'pooled', 0.644274, 98.79154619114095)
+('braboszcz_sub-007', 'within', 0.607257, 241.242391443179)
+('braboszcz_sub-007', 'cross', 0.550294, 38.13059649193016)
+('brandmeyer_sub-001', 'pooled', 0.551435, 8.18572038618165)
+('brandmeyer_sub-001', 'within', 0.464115, 1.9463393373418905)
+('brandmeyer_sub-001', 'cross', 0.607656, 4.5215826818368985)

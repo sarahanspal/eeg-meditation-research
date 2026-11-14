@@ -1,0 +1,70 @@
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: divide by zero encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: overflow encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: invalid value encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:93: RuntimeWarning: Degrees of freedom <= 0 for slice
+  a=X[labels==1,j];b=X[labels==0,j];sp=np.sqrt(((len(a)-1)*a.var(ddof=1)+(len(b)-1)*b.var(ddof=1))/max(1,len(a)+len(b)-2))
+/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/numpy/_core/_methods.py:210: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: divide by zero encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: overflow encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: invalid value encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:93: RuntimeWarning: Degrees of freedom <= 0 for slice
+  a=X[labels==1,j];b=X[labels==0,j];sp=np.sqrt(((len(a)-1)*a.var(ddof=1)+(len(b)-1)*b.var(ddof=1))/max(1,len(a)+len(b)-2))
+/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/numpy/_core/_methods.py:210: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: divide by zero encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: overflow encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: invalid value encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:93: RuntimeWarning: Degrees of freedom <= 0 for slice
+  a=X[labels==1,j];b=X[labels==0,j];sp=np.sqrt(((len(a)-1)*a.var(ddof=1)+(len(b)-1)*b.var(ddof=1))/max(1,len(a)+len(b)-2))
+/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/numpy/_core/_methods.py:210: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: divide by zero encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: overflow encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: invalid value encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: divide by zero encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: overflow encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: invalid value encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: divide by zero encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: overflow encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: invalid value encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: divide by zero encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: overflow encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+/Users/sarshanspal/eeg-meditation-research/trait_experience_analysis.py:53: RuntimeWarning: invalid value encountered in matmul
+  diffs=(masks@X)/n1-((1-masks)@X)/n0
+   dataset condition  experience  n_subjects
+ braboszcz      IMW1 experienced          55
+ braboszcz      IMW1      novice           1
+ braboszcz      IMW2 experienced          55
+ braboszcz      IMW2      novice           1
+ braboszcz       MED experienced          55
+ braboszcz       MED      novice           1
+brandmeyer       MED experienced          10
+brandmeyer       MED      novice           5
+brandmeyer        MW experienced          10
+brandmeyer        MW      novice           4
+       sky      post experienced          18
+       sky      post      novice          19
+       sky       pre experienced          18
+       sky       pre      novice          19
+feature contrasts 1372 years correlations 980

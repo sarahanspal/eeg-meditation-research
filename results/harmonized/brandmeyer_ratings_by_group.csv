@@ -1,0 +1,3 @@
+group,n_subjects,Med,MW,Sleep,Med_paper,MW_paper,Sleep_paper
+expert,10,1.8,1.29,0.85,1.85,1.14,0.69
+novice,5,1.34,1.38,0.51,1.39,1.59,0.73

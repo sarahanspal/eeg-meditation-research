@@ -1,0 +1,49 @@
+claim_id,note
+blocked_think2_halves,Control tasks in combined_analysis.main() are fit on raw (not log-transformed) features while MED_vs_IMW uses log features; see preproc_sensitivity main row (log-consistent control 0.675 vs 0.671 here).
+blocked_think2_vs_think1,Control tasks in combined_analysis.main() are fit on raw (not log-transformed) features while MED_vs_IMW uses log features; see preproc_sensitivity main row (log-consistent control 0.675 vs 0.671 here).
+calibration_think2_vs_think1_base,think2_vs_think1 calibration in calibration_decomposition.main() uses untransformed features.
+calibration_think2_vs_think1_bias_only,think2_vs_think1 calibration in calibration_decomposition.main() uses untransformed features.
+calibration_think2_vs_think1_full_update,think2_vs_think1 calibration in calibration_decomposition.main() uses untransformed features.
+spec_curve_braboszcz_all,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_braboszcz_no_IAF,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_braboszcz_no_asymmetry,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_braboszcz_no_gamma,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_braboszcz_no_gamma_no_ratio,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_braboszcz_power_only,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_braboszcz_power_plus_IAF,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_brandmeyer_all,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_brandmeyer_no_IAF,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_brandmeyer_no_asymmetry,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_brandmeyer_no_gamma,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_brandmeyer_no_gamma_no_ratio,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_brandmeyer_power_only,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+spec_curve_brandmeyer_power_plus_IAF,"ci_low/ci_high are averages of the per-C interval ends, not a CI of the average."
+trait_braboszcz_matched54_frontal_theta_MED,"p = Mann-Whitney; permutation p=0.767; age-adjusted group p=0.562. CTR ""MED"" is breath counting."
+trait_braboszcz_matched54_frontal_theta_IMW2,"p = Mann-Whitney; permutation p=0.205; age-adjusted group p=0.129. CTR ""MED"" is breath counting."
+trait_braboszcz_matched54_frontal_d_MED_minus_IMW2,"p = Mann-Whitney; permutation p=0.071; age-adjusted group p=0.0663. CTR ""MED"" is breath counting."
+trait_braboszcz_matched54_all14_theta_MED,"p = Mann-Whitney; permutation p=0.887; age-adjusted group p=0.896. CTR ""MED"" is breath counting. Secondary analysis (all 14 channels), not the prespecified frontal outcome."
+trait_braboszcz_matched54_all14_theta_IMW2,"p = Mann-Whitney; permutation p=0.216; age-adjusted group p=0.128. CTR ""MED"" is breath counting. Secondary analysis (all 14 channels), not the prespecified frontal outcome."
+trait_braboszcz_matched54_all14_d_MED_minus_IMW2,"p = Mann-Whitney; permutation p=0.0182; age-adjusted group p=0.014. CTR ""MED"" is breath counting. Secondary analysis (all 14 channels), not the prespecified frontal outcome."
+trait_braboszcz_all56_frontal_theta_MED,"p = Mann-Whitney; permutation p=0.735; age-adjusted group p=0.532. CTR ""MED"" is breath counting."
+trait_braboszcz_all56_frontal_theta_IMW2,"p = Mann-Whitney; permutation p=0.196; age-adjusted group p=0.122. CTR ""MED"" is breath counting."
+trait_braboszcz_all56_frontal_d_MED_minus_IMW2,"p = Mann-Whitney; permutation p=0.0678; age-adjusted group p=0.0618. CTR ""MED"" is breath counting."
+trait_braboszcz_all56_all14_theta_MED,"p = Mann-Whitney; permutation p=0.94; age-adjusted group p=0.844. CTR ""MED"" is breath counting. Secondary analysis (all 14 channels), not the prespecified frontal outcome."
+trait_braboszcz_all56_all14_theta_IMW2,"p = Mann-Whitney; permutation p=0.192; age-adjusted group p=0.115. CTR ""MED"" is breath counting. Secondary analysis (all 14 channels), not the prespecified frontal outcome."
+trait_braboszcz_all56_all14_d_MED_minus_IMW2,"p = Mann-Whitney; permutation p=0.0151; age-adjusted group p=0.0124. CTR ""MED"" is breath counting. Secondary analysis (all 14 channels), not the prespecified frontal outcome."
+trait_brandmeyer_brandmeyer_frontal_theta_MED,"p = Mann-Whitney; permutation p=0.111; age-adjusted group p=0.158. CTR ""MED"" is breath counting."
+dose_frontal_theta_d,"partial rho given age=-0.021, p=0.88. Four tests, no multiplicity correction."
+dose_loso_within,"partial rho given age=0.333, p=0.0159. Four tests, no multiplicity correction."
+dose_loso_pooled,"partial rho given age=0.343, p=0.0128. Four tests, no multiplicity correction."
+dose_loso_cross,"partial rho given age=0.035, p=0.805. Four tests, no multiplicity correction."
+brandmeyer_rating_0_Med,Table 1 value as recorded in decode_brandmeyer_probes.py: 1.85 (not independently verified)
+brandmeyer_rating_0_MW,Table 1 value as recorded in decode_brandmeyer_probes.py: 1.14 (not independently verified)
+brandmeyer_rating_0_Sleep,Table 1 value as recorded in decode_brandmeyer_probes.py: 0.69 (not independently verified)
+brandmeyer_rating_1_Med,Table 1 value as recorded in decode_brandmeyer_probes.py: 1.39 (not independently verified)
+brandmeyer_rating_1_MW,Table 1 value as recorded in decode_brandmeyer_probes.py: 1.59 (not independently verified)
+brandmeyer_rating_1_Sleep,Table 1 value as recorded in decode_brandmeyer_probes.py: 0.73 (not independently verified)
+order_med2_think2_start_to_start_min,"27 subjects think-first, 27 meditation-first; header-derived order agrees with participants.tsv first_session in 92/92 subjects."
+N_combined_loso_brandmeyer,"brandmeyer_sub-017: single class in held-out data (MED=50, other=0)"
+N_blocked_control:MED_vs_IMW_braboszcz,"braboszcz_sub-097: <20 epochs in a class (MED=7, IMW2=32); blocked 5-fold CV needs >=20/class"
+N_blocked_control:think2_first_vs_second_half_braboszcz,"braboszcz_sub-097: <20 epochs in a class (H1=16, H2=16); blocked 5-fold CV needs >=20/class"
+N_paired_control_MED_vs_IMW_minus_think2_vs_think1_braboszcz,braboszcz_sub-097: missing from MED_vs_IMW (see above)
+N_feature_sign_consistency_brandmeyer,"brandmeyer_sub-004: <5 epochs in a class (MED=2, non-MED=5); brandmeyer_sub-007: <5 epochs in a class (MED=35, non-MED=4); brandmeyer_sub-017: <5 epochs in a class (MED=50, non-MED=0)"

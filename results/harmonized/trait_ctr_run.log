@@ -1,0 +1,20 @@
+Brandmeyer subjects by group (15 surviving): {'expert': 10, 'novice': 5}
+   dataset                                        comparison          outcome  n_A  n_B  mean_A  mean_B  cohens_d  d_ci_low  d_ci_high  p_mwu  p_perm  p_group_age_adjusted  p_fdr_bh
+ braboszcz       matched 54 experienced (HYT/VIP/ISY) vs CTR        theta_MED   54   31 -1.9204 -1.9471    0.0664   -0.3368     0.5303 0.3833  0.7669                0.5625    0.4529
+ braboszcz       matched 54 experienced (HYT/VIP/ISY) vs CTR       theta_IMW2   54   31 -2.0405 -2.1607    0.2882   -0.1247     0.7270 0.2481  0.2048                0.1289    0.4529
+ braboszcz       matched 54 experienced (HYT/VIP/ISY) vs CTR d_MED_minus_IMW2   54   31  0.3356  0.6079   -0.4122   -0.8659     0.0416 0.2481  0.0710                0.0663    0.4529
+ braboszcz       matched 54 experienced (HYT/VIP/ISY) vs CTR        theta_MED   54   31 -1.9507 -1.9384   -0.0322   -0.4341     0.4296 0.8088  0.8875                0.8960    0.8088
+ braboszcz       matched 54 experienced (HYT/VIP/ISY) vs CTR       theta_IMW2   54   31 -2.0691 -2.1900    0.2820   -0.1548     0.7353 0.3264  0.2164                0.1285    0.4529
+ braboszcz       matched 54 experienced (HYT/VIP/ISY) vs CTR d_MED_minus_IMW2   54   31  0.3181  0.6926   -0.5388   -0.9811    -0.0898 0.0658  0.0182                0.0140    0.4369
+ braboszcz all 56 harmonized experienced-arm subjects vs CTR        theta_MED   56   31 -1.9163 -1.9471    0.0773   -0.3285     0.5442 0.3683  0.7351                0.5320    0.4529
+ braboszcz all 56 harmonized experienced-arm subjects vs CTR       theta_IMW2   56   31 -2.0384 -2.1607    0.2949   -0.1171     0.7365 0.2332  0.1959                0.1216    0.4529
+ braboszcz all 56 harmonized experienced-arm subjects vs CTR d_MED_minus_IMW2   56   31  0.3359  0.6079   -0.4166   -0.8662     0.0498 0.2548  0.0678                0.0618    0.4529
+ braboszcz all 56 harmonized experienced-arm subjects vs CTR        theta_MED   56   31 -1.9449 -1.9384   -0.0171   -0.4385     0.4384 0.7665  0.9400                0.8444    0.8088
+ braboszcz all 56 harmonized experienced-arm subjects vs CTR       theta_IMW2   56   31 -2.0646 -2.1900    0.2937   -0.1447     0.7219 0.3102  0.1916                0.1149    0.4529
+ braboszcz all 56 harmonized experienced-arm subjects vs CTR d_MED_minus_IMW2   56   31  0.3176  0.6926   -0.5459   -0.9739    -0.1058 0.0672  0.0151                0.0124    0.4369
+brandmeyer                                  expert vs novice        theta_MED    9    5 -2.0029 -1.6722   -0.9767   -2.3717    -0.2119 0.1469  0.1108                0.1576    0.4529
+brandmeyer                                  expert vs novice         theta_MW    9    4     NaN     NaN       NaN       NaN        NaN    NaN     NaN                   NaN       NaN
+brandmeyer                                  expert vs novice   d_MED_minus_MW    8    4     NaN     NaN       NaN       NaN        NaN    NaN     NaN                   NaN       NaN
+       outcome  n_A  n_B                                                  note
+      theta_MW    9    4 not run: a group has <5 subjects. frontal F3/F4/F7/F8
+d_MED_minus_MW    8    4 not run: a group has <5 subjects. frontal F3/F4/F7/F8

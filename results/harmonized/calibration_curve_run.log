@@ -1,0 +1,16 @@
+                                              task  frac  calibration_seconds  N  mean_gain_full  ci_low  ci_high  p_signflip
+                                       MED_vs_IMW2  0.02              23.4074 54          0.0302  0.0222   0.0400      0.0000
+                                       MED_vs_IMW2  0.05              58.2963 54          0.0629  0.0488   0.0782      0.0000
+                                       MED_vs_IMW2  0.10             114.0000 54          0.0992  0.0793   0.1202      0.0000
+                                       MED_vs_IMW2  0.20             227.4074 54          0.1446  0.1191   0.1727      0.0000
+                                       MED_vs_IMW2  0.30             341.5556 54          0.1743  0.1447   0.2053      0.0000
+                                  think2_vs_think1  0.02              23.2593 54          0.0220  0.0097   0.0355      0.0003
+                                  think2_vs_think1  0.05              58.9630 54          0.0386  0.0218   0.0558      0.0000
+                                  think2_vs_think1  0.10             115.0370 54          0.0599  0.0381   0.0821      0.0000
+                                  think2_vs_think1  0.20             230.0741 54          0.0827  0.0533   0.1123      0.0000
+                                  think2_vs_think1  0.30             345.1852 54          0.0922  0.0591   0.1252      0.0000
+null_adjusted (MED_vs_IMW2 minus think2_vs_think1)  0.02              23.3333 54          0.0082 -0.0064   0.0207      0.2350
+null_adjusted (MED_vs_IMW2 minus think2_vs_think1)  0.05              58.6296 54          0.0243  0.0040   0.0439      0.0172
+null_adjusted (MED_vs_IMW2 minus think2_vs_think1)  0.10             114.5185 54          0.0393  0.0107   0.0676      0.0081
+null_adjusted (MED_vs_IMW2 minus think2_vs_think1)  0.20             228.7407 54          0.0619  0.0232   0.0994      0.0024
+null_adjusted (MED_vs_IMW2 minus think2_vs_think1)  0.30             343.3704 54          0.0821  0.0376   0.1259      0.0008
