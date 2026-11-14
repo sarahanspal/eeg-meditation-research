@@ -1,0 +1,3 @@
+cv,n_probes,probes_with_2_epochs,probes_with_1_epoch,probes_split_across_train_test
+LOSO (combined_analysis.evaluate: within/pooled/cross),326,292,34,0
+GroupKFold-5 by subject (dataset identity probe),326,292,34,0

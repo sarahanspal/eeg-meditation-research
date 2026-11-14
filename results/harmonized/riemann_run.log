@@ -1,0 +1,11 @@
+54 subjects, covariances in 14s; think1 available for 54
+MED_vs_IMW2 54 subjects 244s
+think2_vs_think1 54 subjects 240s
+            task                  model  N   mean  ci_low  ci_high  p_vs_chance
+     MED_vs_IMW2         feature_logreg 54 0.5697  0.5373   0.6010       0.0002
+     MED_vs_IMW2 riemann_tangent_logreg 54 0.5113  0.4899   0.5351       0.3410
+think2_vs_think1         feature_logreg 54 0.5124  0.4878   0.5370       0.3275
+think2_vs_think1 riemann_tangent_logreg 54 0.5072  0.4948   0.5201       0.2803
+            task  N  mean_riemann_minus_feature  ci_low  ci_high  p_signflip
+     MED_vs_IMW2 54                     -0.0584 -0.0923  -0.0227      0.0021
+think2_vs_think1 54                     -0.0052 -0.0302   0.0198      0.6922

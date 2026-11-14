@@ -1,0 +1,9 @@
+dataset,model,comparison,n_subjects,mean_difference,ci_low,ci_high,p_signflip,p_fdr
+braboszcz,dummy,pooled_minus_within,54,0.0,0.0,0.0,1.0,1.0
+braboszcz,dummy,cross_minus_pooled,54,0.0,0.0,0.0,1.0,1.0
+braboszcz,logistic,pooled_minus_within,54,0.022652269711703622,0.003929024733287858,0.04289163530563431,0.0271986400679966,0.1087945602719864
+braboszcz,logistic,cross_minus_pooled,54,-0.046768373622893114,-0.07932553034641297,-0.015295389128961627,0.005349732513374331,0.04279786010699465
+brandmeyer,dummy,pooled_minus_within,14,0.0,0.0,0.0,1.0,1.0
+brandmeyer,dummy,cross_minus_pooled,14,0.0,0.0,0.0,1.0,1.0
+brandmeyer,logistic,pooled_minus_within,14,0.014617475481850942,-0.024368828236872035,0.053096421514871164,0.49167541622918853,1.0
+brandmeyer,logistic,cross_minus_pooled,14,0.002975670889717103,-0.062020215549005366,0.05807907098716223,0.9332533373331333,1.0

@@ -1,0 +1,166 @@
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:105: DeprecationWarning: 
+The `fooof` package is being deprecated and replaced by the `specparam` (spectral parameterization) package.
+This version of `fooof` (1.1) is fully functional, but will not be further updated.
+New projects are recommended to update to using `specparam` (see Changelog for details).
+  from fooof import FOOOF
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+alignment check (n epochs equal, corr of my relative theta with table F3_theta): [('sub-006', 'MED', True, 1.0), ('sub-006', 'IMW2', True, 1.0), ('sub-007', 'MED', True, 1.0), ('sub-007', 'IMW2', True, 1.0)]
+/Users/sarshanspal/eeg-meditation-research/aperiodic_theta.py:24: DeprecationWarning: 
+The `fooof` package is being deprecated and replaced by the `specparam` (spectral parameterization) package.
+This version of `fooof` (1.1) is fully functional, but will not be further updated.
+New projects are recommended to update to using `specparam` (see Changelog for details).
+  from fooof import FOOOF
+/Users/sarshanspal/eeg-meditation-research/aperiodic_theta.py:24: DeprecationWarning: 
+The `fooof` package is being deprecated and replaced by the `specparam` (spectral parameterization) package.
+This version of `fooof` (1.1) is fully functional, but will not be further updated.
+New projects are recommended to update to using `specparam` (see Changelog for details).
+  from fooof import FOOOF
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+/Users/sarshanspal/eeg-meditation-research/aperiodic_theta.py:87: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  resid = W.groupby('subject', group_keys=False).apply(lambda g: g[f'{c}_logtheta'] - np.polyval(np.polyfit(g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean()), g[f'{c}_logtheta'], 1), g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean())))
+/Users/sarshanspal/eeg-meditation-research/aperiodic_theta.py:87: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  resid = W.groupby('subject', group_keys=False).apply(lambda g: g[f'{c}_logtheta'] - np.polyval(np.polyfit(g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean()), g[f'{c}_logtheta'], 1), g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean())))
+/Users/sarshanspal/eeg-meditation-research/aperiodic_theta.py:87: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  resid = W.groupby('subject', group_keys=False).apply(lambda g: g[f'{c}_logtheta'] - np.polyval(np.polyfit(g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean()), g[f'{c}_logtheta'], 1), g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean())))
+/Users/sarshanspal/eeg-meditation-research/aperiodic_theta.py:87: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  resid = W.groupby('subject', group_keys=False).apply(lambda g: g[f'{c}_logtheta'] - np.polyval(np.polyfit(g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean()), g[f'{c}_logtheta'], 1), g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean())))
+/Users/sarshanspal/eeg-meditation-research/aperiodic_theta.py:87: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  resid = W.groupby('subject', group_keys=False).apply(lambda g: g[f'{c}_logtheta'] - np.polyval(np.polyfit(g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean()), g[f'{c}_logtheta'], 1), g[f'{c}_exponent'].fillna(g[f'{c}_exponent'].mean())))
+fits: 61496 | failed: 0 | mean r2 0.943 | epochs with a theta peak: MED 0.39 IMW2 0.34
+                                         measure                         feature  n  frac_positive  median_standardized_difference  p_binomial  p_fdr_bh
+                              aperiodic exponent                     F3_exponent 54         0.5741                          0.1437      0.3409    0.4091
+                              aperiodic exponent                     F4_exponent 54         0.5185                          0.0698      0.8919    0.8919
+                              aperiodic exponent                     F7_exponent 54         0.5741                          0.2540      0.3409    0.4091
+                              aperiodic exponent                     F8_exponent 54         0.5741                          0.1399      0.3409    0.4091
+                              aperiodic exponent                frontal_exponent 54         0.5741                          0.2306      0.3409    0.4091
+                                aperiodic offset                       F3_offset 54         0.5556                          0.0682      0.4966    0.5518
+                                aperiodic offset                       F4_offset 54         0.5370                          0.0374      0.6835    0.7323
+                                aperiodic offset                       F7_offset 54         0.4815                         -0.0310      0.8919    0.8919
+                                aperiodic offset                       F8_offset 54         0.5926                          0.1436      0.2203    0.3305
+                                aperiodic offset                  frontal_offset 54         0.5741                          0.2426      0.3409    0.4091
+      periodic theta peak power (NaN if no peak)             F3_theta_peak_power 52         0.6923                          0.1700      0.0078    0.0137
+      periodic theta peak power (NaN if no peak)             F4_theta_peak_power 52         0.6346                          0.1337      0.0704    0.1111
+      periodic theta peak power (NaN if no peak)             F7_theta_peak_power 52         0.7115                          0.2519      0.0032    0.0072
+      periodic theta peak power (NaN if no peak)             F8_theta_peak_power 52         0.5577                          0.0758      0.4885    0.5518
+      periodic theta peak power (NaN if no peak)        frontal_theta_peak_power 54         0.6667                          0.1868      0.0198    0.0331
+           periodic theta flattened power 4-8 Hz             F3_theta_flat_power 54         0.7593                          0.2964      0.0002    0.0013
+           periodic theta flattened power 4-8 Hz             F4_theta_flat_power 54         0.7407                          0.3490      0.0005    0.0023
+           periodic theta flattened power 4-8 Hz             F7_theta_flat_power 54         0.7778                          0.2965      0.0001    0.0005
+           periodic theta flattened power 4-8 Hz             F8_theta_flat_power 54         0.7222                          0.2610      0.0015    0.0050
+           periodic theta flattened power 4-8 Hz        frontal_theta_flat_power 54         0.7963                          0.3754      0.0000    0.0004
+reference: log relative theta (existing feature)                     F3_logtheta 54         0.7037                          0.3136      0.0038    0.0072
+reference: log relative theta (existing feature)                     F4_logtheta 54         0.7037                          0.2542      0.0038    0.0072
+reference: log relative theta (existing feature)                     F7_logtheta 54         0.7037                          0.3870      0.0038    0.0072
+reference: log relative theta (existing feature)                     F8_logtheta 54         0.7037                          0.3520      0.0038    0.0072
+reference: log relative theta (existing feature)                frontal_logtheta 54         0.7778                          0.3561      0.0001    0.0005
+          relative theta after removing exponent      F3_logtheta_resid_exponent 54         0.7407                          0.2152      0.0005    0.0023
+          relative theta after removing exponent      F4_logtheta_resid_exponent 54         0.7037                          0.2258      0.0038    0.0072
+          relative theta after removing exponent      F7_logtheta_resid_exponent 54         0.7407                          0.2757      0.0005    0.0023
+          relative theta after removing exponent      F8_logtheta_resid_exponent 54         0.7037                          0.2279      0.0038    0.0072
+          relative theta after removing exponent frontal_logtheta_resid_exponent 54         0.7222                          0.2650      0.0015    0.0050

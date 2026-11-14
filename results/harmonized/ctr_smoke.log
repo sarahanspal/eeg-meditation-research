@@ -1,0 +1,61 @@
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:105: DeprecationWarning: 
+The `fooof` package is being deprecated and replaced by the `specparam` (spectral parameterization) package.
+This version of `fooof` (1.1) is fully functional, but will not be further updated.
+New projects are recommended to update to using `specparam` (see Changelog for details).
+  from fooof import FOOOF
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+CTR sub-025 ok {'IMW1': 153, 'IMW2': 152, 'MED': 143}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)

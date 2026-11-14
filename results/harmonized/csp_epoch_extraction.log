@@ -1,0 +1,825 @@
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:105: DeprecationWarning: 
+The `fooof` package is being deprecated and replaced by the `specparam` (spectral parameterization) package.
+This version of `fooof` (1.1) is fully functional, but will not be further updated.
+New projects are recommended to update to using `specparam` (see Changelog for details).
+  from fooof import FOOOF
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-008 {'MED': (158, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-009 {'MED': (150, 14, 1024), 'IMW2': (153, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-010 {'MED': (151, 14, 1024), 'IMW2': (153, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-011 {'MED': (150, 14, 1024), 'IMW2': (153, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-012 {'MED': (152, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-013 {'MED': (150, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-014 {'MED': (152, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-015 {'MED': (151, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-016 {'MED': (127, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8 has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-018 {'MED': (144, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-019 {'MED': (152, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-020 {'MED': (153, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1024, using nperseg = 1024
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1152, using nperseg = 1152
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1792, using nperseg = 1792
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1536, using nperseg = 1536
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1024, using nperseg = 1024
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1152, using nperseg = 1152
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1664, using nperseg = 1664
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1920, using nperseg = 1920
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1664, using nperseg = 1664
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1664, using nperseg = 1664
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-021 {'MED': (92, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-022 {'MED': (151, 14, 1024), 'IMW2': (153, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-023 {'MED': (148, 14, 1024), 'IMW2': (180, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-024 {'MED': (151, 14, 1024), 'IMW2': (110, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-060 {'MED': (150, 14, 1024), 'IMW2': (142, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1152, using nperseg = 1152
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-061 {'MED': (132, 14, 1024), 'IMW2': (120, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-062 {'MED': (150, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-063 {'MED': (149, 14, 1024), 'IMW2': (152, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-065 {'MED': (182, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-066 {'MED': (147, 14, 1024), 'IMW2': (87, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-067 {'MED': (151, 14, 1024), 'IMW2': (146, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-068 {'MED': (141, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-069 {'MED': (150, 14, 1024), 'IMW2': (83, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-070 {'MED': (138, 14, 1024), 'IMW2': (148, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-071 {'MED': (156, 14, 1024), 'IMW2': (155, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-072 {'MED': (152, 14, 1024), 'IMW2': (147, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1280, using nperseg = 1280
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-073 {'MED': (135, 14, 1024), 'IMW2': (148, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-074 {'MED': (146, 14, 1024), 'IMW2': (146, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-075 {'MED': (146, 14, 1024), 'IMW2': (142, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-076 {'MED': (147, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-077 {'MED': (126, 14, 1024), 'IMW2': (148, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-078 {'MED': (150, 14, 1024), 'IMW2': (152, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-079 {'MED': (148, 14, 1024), 'IMW2': (153, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-080 {'MED': (160, 14, 1024), 'IMW2': (155, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-081 {'MED': (150, 14, 1024), 'IMW2': (142, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-083 {'MED': (152, 14, 1024), 'IMW2': (154, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-084 {'MED': (150, 14, 1024), 'IMW2': (146, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-085 {'MED': (150, 14, 1024), 'IMW2': (151, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-086 {'MED': (150, 14, 1024), 'IMW2': (146, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-087 {'MED': (150, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 512, using nperseg = 512
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1664, using nperseg = 1664
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 640, using nperseg = 640
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 512, using nperseg = 512
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-088 {'MED': (59, 14, 1024), 'IMW2': (148, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-089 {'MED': (151, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-090 {'MED': (150, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-091 {'MED': (153, 14, 1024), 'IMW2': (145, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-092 {'MED': (146, 14, 1024), 'IMW2': (150, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: divide by zero encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: overflow encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/utils/linalg.py:243: RuntimeWarning: invalid value encountered in matmul
+  return (u @ vh[:rank]).conj().T
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 512, using nperseg = 512
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1664, using nperseg = 1664
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1280, using nperseg = 1280
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1792, using nperseg = 1792
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1024, using nperseg = 1024
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 640, using nperseg = 640
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1152, using nperseg = 1152
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1664, using nperseg = 1664
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 256, using nperseg = 256
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-093 {'MED': (64, 14, 1024), 'IMW2': (101, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 640, using nperseg = 640
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 640, using nperseg = 640
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 512, using nperseg = 512
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-094 {'MED': (142, 14, 1024), 'IMW2': (144, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-096 {'MED': (139, 14, 1024), 'IMW2': (148, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 896, using nperseg = 896
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1408, using nperseg = 1408
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 768, using nperseg = 768
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1536, using nperseg = 1536
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 640, using nperseg = 640
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 256, using nperseg = 256
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 256, using nperseg = 256
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 384, using nperseg = 384
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 768, using nperseg = 768
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1280, using nperseg = 1280
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 512, using nperseg = 512
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 512, using nperseg = 512
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 256, using nperseg = 256
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 640, using nperseg = 640
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 256, using nperseg = 256
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1536, using nperseg = 1536
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 256, using nperseg = 256
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1152, using nperseg = 1152
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+/Users/sarshanspal/eeg-meditation-research/venv/lib/python3.9/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 128, using nperseg = 128
+  return _func(*args, **kwargs)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-097 {'MED': (7, 14, 1024), 'IMW2': (32, 14, 1024)}
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py:208: RuntimeWarning: The unit for channel(s) EXG1, EXG2, EXG3, EXG4, EXG5, EXG6, EXG7, EXG8, Erg1, Erg2, GSR1, GSR2, Plet, Resp, Temp has changed from V to NA.
+  raw.set_channel_types(type_map, verbose=False)
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+    channel names already look standard-1020-like (64/64 overlap) - skipping positional remap, only attaching montage.
+sub-098 {'MED': (146, 14, 1024), 'IMW2': (148, 14, 1024)}
+     subject condition  n_epochs_cache  n_epochs_features  match
+0    sub-008       MED             158                158   True
+1    sub-008      IMW2             151                151   True
+2    sub-009       MED             150                150   True
+3    sub-009      IMW2             153                153   True
+4    sub-010       MED             151                151   True
+..       ...       ...             ...                ...    ...
+99   sub-096      IMW2             148                148   True
+100  sub-097       MED               7                  7   True
+101  sub-097      IMW2              32                 32   True
+102  sub-098       MED             146                146   True
+103  sub-098      IMW2             148                148   True
+
+[104 rows x 5 columns]

@@ -1,0 +1,292 @@
+{
+  "python": "3.9.6 (default, Dec  2 2025, 07:27:58) \n[Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.6.1",
+    "mne": "1.8.0",
+    "pyriemann": "0.11",
+    "fooof": "1.1.1",
+    "matplotlib": "3.9.4"
+  },
+  "preprocessing": {
+    "channels": [
+      "C3",
+      "C4",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "O1",
+      "O2",
+      "P3",
+      "P4",
+      "P7",
+      "P8",
+      "T7",
+      "T8"
+    ],
+    "reference": "common-channel average reference",
+    "notch_hz": [
+      50,
+      60
+    ],
+    "highpass_hz": 1.0,
+    "highpass_iir": "6th-order Butterworth, zero phase",
+    "sampling_rate_hz": 256,
+    "epoch_seconds": 4,
+    "epoch_overlap_seconds": 0,
+    "ica": "Infomax extended, random_state=97, shared across runs within subject, fit decim=2",
+    "feature_schema": "canonical bands, IAF, asymmetry, cross-band ratios"
+  },
+  "superseded": {
+    "csp_matched_loso_subject.csv": "Legacy-array CSP (med1breath+med2 vs think1+think2, different preprocessing); superseded by csp_harmonized_loso_subject.csv. Kept, not for paper numbers."
+  },
+  "known_warnings": {
+    "sklearn_matmul_overflow_invalid": "Spurious FP flags from numpy 2.0.2 + Apple Accelerate (macOS 15); features finite, |x|<=13, identical balanced accuracy under numpy 1.26.4/OpenBLAS (0 warnings). See numerical_warning_blas_comparison.log."
+  },
+  "dataset_exceptions": {
+    "sky": "The fixed dB bad-segment detector flagged >=95% of recording; annotation rejection was skipped for SKY. SKY inputs retain 4-second timed epochs and use common filters/reference/ICA.",
+    "braboszcz_classifier_cohort": "Classifier analyses include HYT, VIP, ISY only; equal n=18 subjects/style, selected with seed 20261111. CTR and TM excluded. The full harmonized feature table remains unbalanced (18 HYT, 18 VIP, 20 ISY) for descriptive/trait summaries."
+  },
+  "code_sha256": {
+    "reextract_harmonized.py": "e2db3e53f83d03fa757edcf4f765a941e25f467297940d7b325a405e4f5a15c0",
+    "braboszcz_classifier_cohort.py": "3667651135b56015b72a5853c67490a8274dcfbac40b7dc25ba045ea2ddef705",
+    "braboszcz_style_classifiers.py": "ccc926156283b8cd0450dfce78c27ef73acfd616dea45908c91dd79e70c4593d",
+    "braboszcz_style_statistics.py": "0b1b4361091e24956a77613203fdd4e461ff45a4ed16472f895edd202ec5a83a",
+    "csp_harness.py": "b0d3bc0022fb9e33bde6edcc8cc2df5d7ac7214662da7ff1362a84f912513cbb",
+    "combined_analysis.py": "e77933aafcae0e531b41ca8d22ba896397a4b79e70eb66b3fe05d4c4b625cf3e",
+    "combined_supplementary.py": "fbe99bf7d5f82dd7fc632bf46be8cfd4f3e8d860517377451e73577ea885965f",
+    "trait_experience_analysis.py": "8553c45797282bb27cf91186ef6e737b636499b04123c14ad896e1b3627b1190",
+    "calibration_decomposition.py": "b8b5ace94db7d013ebc45ef1f36d4234b6161343290e32f4ca669a621d9d8dad",
+    "feature_specification_curve.py": "dc111842402a3b08c3486f44a0b8128dc64f9f9cf985092d9a674506bdef262d",
+    "cohort_reconciliation.py": "8520458933197e96e5048b5bd5f2ec6ee77998cc80412476e71cb5dfe0cafa8d",
+    "csp_harmonized_epochs.py": "f44e44e32da570f55e5a83cd3544d3cfbca24883a46f720216835ee53618bbe7",
+    "csp_harmonized_loso.py": "a0e0b896030abcf68066b68edb89e02876529820c3b4b2ff2c908100e5b9eddd",
+    "cohort_by_analysis.py": "f50d7588b159c410b74600853655102d2b0d6b76f75f0335710dcaeebb805c22",
+    "braboszcz_run_order.py": "7593a60da7252492c0fe5639df5c71a088b38cdf698e9bfddfd5dfe1e50caea1",
+    "numerical_warning_diagnosis_probe.py": "865eea6749d0553c9589ab36228f3bb4149f1cf8cc9a75d351f7e71d87043685",
+    "numerical_warning_blas_comparison.py": "157dfdd3ace62cc5b1914a9d632e031dcece27745032e45bab53a4af170b8f9d",
+    "extract_braboszcz_ctr.py": "302a6e225e06c74d3a99532480ec80ad5e4ff0fb8fbb08a84ff7c94747aa1947",
+    "trait_ctr_vs_experienced.py": "75ab74225502de0525618df8268215383f1ea4210d2b3948d5f7399e732a124e",
+    "dose_response_years.py": "782cfb20eb8c3141fcfc816901c13a8177680a23ed0bf22c39219d22c53d7caa",
+    "riemann_loso.py": "2de991d864b4e0bd27ea1779d87d918c706bc33de7874e0196424f5a26618ef9",
+    "preproc_variants.py": "717c4fcb03616843b1ce5e61b2af573cb3e9641afe55f530fa5db7bb0d69def6",
+    "preproc_sensitivity.py": "abcdcb1f647f476b892238e4dc3cb435e0a35ad5e6bab44c0af7900ccb40e53e",
+    "aperiodic_theta.py": "0c15f1d43ef683d2cc442ba92781f6ea96d8e0110ecac70c54d39e47e11155f1",
+    "brandmeyer_sanity.py": "d2839565a7327ffe621f5ad9be532a928a2a97ffda9a1c90d169893b0214c2f2",
+    "calibration_curve.py": "4e9c9142eb96da227414070f488b56fba06251b031b3e8418c97341f01ac4bb9",
+    "paper_numbers.py": "7de4a7b1e9f371a58174dae86a1149760bf2b0fdb1d9b853389d788b888ec42e",
+    "methods_facts.py": "4aeb7bb08012349585a432f3e73dac6d9dc0cd7be5365d67bb60c0ca3b462267",
+    "make_figures.py": "058a927bbde9b93292ce15b8b363d09b9b4bd383c19c048508e7c8ca593aee9b",
+    "write_harmonized_manifest.py": "14f97f0b23826aacd5b05da1ae84a88d83e04405484727a8e1b1894c4f786502",
+    "plot_research_summary.py": "bdd0c0fb43df5fe1942c15f05b1645dd4ec50e433ecd5406ba63a0bf298e844a"
+  },
+  "analysis_outputs": {
+    "combined_loso_summary.csv": {
+      "sha256": "ef548c53fedb4fa9816b4d746e3f2697e64a60bcdb4039ee80d5bbe2b940714b",
+      "bytes": 649
+    },
+    "combined_loso_statistics.csv": {
+      "sha256": "c6c846d528770455f154677612a55f028fe4bab4e46d28b05e97fbac95884699",
+      "bytes": 1075
+    },
+    "combined_dataset_probe.csv": {
+      "sha256": "6ccc8999cc358c6907af297b0ab5989103f1970dc894fe9f7eef9e6ac039898c",
+      "bytes": 86
+    },
+    "combined_blocked_controls.csv": {
+      "sha256": "3a18d8234b0d37aa68c907c6a74da437ee0afa6a0d3f82c4d9a1d88009ba4f8d",
+      "bytes": 9467
+    },
+    "combined_learning_curve_summary.csv": {
+      "sha256": "0aa24e09c18a983d97a9f47a2ef73d3eabc58d1870dfa88fcefd66d7352aff91",
+      "bytes": 802
+    },
+    "combined_feature_sign_consistency.csv": {
+      "sha256": "b1707947a2ebbb80875752c10b98a7861f4db1c774d412abb366fe6c1b3ca25d",
+      "bytes": 18683
+    },
+    "calibration_decomposition_subject.csv": {
+      "sha256": "6b08d84191acae5633c42cae97b732917689415b3efa02b68259988b9fc23fde",
+      "bytes": 14204
+    },
+    "calibration_null_adjusted_gain.csv": {
+      "sha256": "a81e377c9b79595d7ae13faf54966e000bfa43f64da1beaf4112af72345f1310",
+      "bytes": 4348
+    },
+    "feature_specification_summary.csv": {
+      "sha256": "d0075459b6d3c177cab8f5bd7d2fa385c6d14431ac429f4d5348c703cbb93166",
+      "bytes": 3651
+    },
+    "trait_state_cohort.csv": {
+      "sha256": "cfb951285ac9903a9753f5e98bc59a3aacb905fdaa2b9b8c5eb40bcb6c68e52e",
+      "bytes": 390
+    },
+    "trait_experience_feature_effects.csv": {
+      "sha256": "f89ff2be7edc8042b956fff4ec5d3d7ee173a2797ce0c8e7c049202ac9a7c095",
+      "bytes": 272805
+    },
+    "trait_years_practice_feature_correlations.csv": {
+      "sha256": "777961dc739ceb78f6bb0818ef8f9dc2a55f20663c73a9cb5bfa42cdf1b96290",
+      "bytes": 86918
+    },
+    "braboszcz_classifier_cohort.csv": {
+      "sha256": "87620661ce47a29f9087a2274419869a14a022a6f98873ba2dc95e095e777f02",
+      "bytes": 2520
+    },
+    "braboszcz_style_state_loso_summary.csv": {
+      "sha256": "bad8e77e0cc3a65680cafb22a600da043da79df23daf127f4d8ab272b7d3743e",
+      "bytes": 332
+    },
+    "braboszcz_med_style_loso_macro_summary.csv": {
+      "sha256": "83ed5d95b60cc352c0ef92ee0c79718372f24f80a0ae15b3343f45408c233e37",
+      "bytes": 540
+    },
+    "braboszcz_style_classifier_statistics.csv": {
+      "sha256": "c59771a4af4e0ee12379e49c4dde2eec7abf465cb2e67694dada73b503aa1a5e",
+      "bytes": 2829
+    },
+    "csp_matched_loso_subject.csv": {
+      "sha256": "b2021ed1c360c6d65e1f9177c90114a703dc379a85cbc3d2328e7bda4466af24",
+      "bytes": 1920
+    },
+    "csp_harmonized_loso_subject.csv": {
+      "sha256": "b4ef2854b4eff718efa82e3f2375cdc7d6592b36f8cea84281ae1b3ccdab530f",
+      "bytes": 6443
+    },
+    "cohort_by_analysis.csv": {
+      "sha256": "c07bf32608c1829cfb6022f7efe2ced611ee51e8ee56c12131f9551309b33b09",
+      "bytes": 1712
+    },
+    "cohort_by_analysis_exclusions.csv": {
+      "sha256": "fe82a56845355390ed2fbbe176289cfa1c7ec5fb871202631d95d4c03e7e4d91",
+      "bytes": 811
+    },
+    "braboszcz_run_order.csv": {
+      "sha256": "9ad7de98c3ab8714bc3ad06a1a1fdc31d570388256ac72021d1653b4c0289120",
+      "bytes": 17998
+    },
+    "numerical_warning_feature_profile.csv": {
+      "sha256": "11dd0519e84916724c7cd5e7ba986024c9a2b9cd21bb78e42ce32c3b858af48c",
+      "bytes": 19651
+    },
+    "numerical_warning_blas_comparison.log": {
+      "sha256": "6cc27019c14bac23c4038c0b58d93bc450a6a248ecb4f69917d866a17399a87c",
+      "bytes": 1380
+    },
+    "research_summary.png": {
+      "sha256": "401a70c21be9702f62823ea7d556cdc81e91ff58fc90a8356a54c9f37d75fa57",
+      "bytes": 156142
+    },
+    "trait_ctr_vs_experienced.csv": {
+      "sha256": "6895ec4783d65f622ef0e19886656d240c23d712c2a3a393ffcbe3dcd8a3332f",
+      "bytes": 5478
+    },
+    "dose_response_years.csv": {
+      "sha256": "478fa0f506cb6ce7f206046bad10b924aabf88f65be946c5a308edeee7c9e2cc",
+      "bytes": 693
+    },
+    "riemann_loso_subject.csv": {
+      "sha256": "e5a6de13ad1375a3ef2fea8a4fd5c26ed4361483934f60b00cc5caef033ad285",
+      "bytes": 13174
+    },
+    "riemann_vs_feature_paired.csv": {
+      "sha256": "30013d90e2ee5aac8fbcac598d24af513439b6d3d18729fa6bcd73669900e236",
+      "bytes": 262
+    },
+    "preproc_sensitivity.csv": {
+      "sha256": "9e124e3b308cdfc7859425c5dab50a726048be753a2021f850a9df2f848345ba",
+      "bytes": 1682
+    },
+    "aperiodic_sign_consistency.csv": {
+      "sha256": "2eba316807edade2554fa68fa51cd3ce597a40b8866b85579f9ab703048a57be",
+      "bytes": 4117
+    },
+    "braboszcz_ctr_features.csv": {
+      "sha256": "e45a79b611927329c4cf78871003e0cdceef9f6e6a2c0ccfa503aafb54963117",
+      "bytes": 44462518
+    },
+    "brandmeyer_probe_fold_check.csv": {
+      "sha256": "8752b0927ba0e1932eaf9a7c3159c6477f27be7671227a194e1c72d090415216",
+      "bytes": 214
+    },
+    "brandmeyer_ratings_by_group.csv": {
+      "sha256": "9e7e8a5a175bf50aea13518c34ab7af3fc483c5d57eab9aa5280efd511ecc59e",
+      "bytes": 139
+    },
+    "calibration_curve_summary.csv": {
+      "sha256": "d1e096dbe4d8ea384ac482ce324588370c22f5a7d738c246f9c87e1a4374fb53",
+      "bytes": 2074
+    },
+    "paper_numbers.csv": {
+      "sha256": "ec00df6f97793d009a1aab12eb3e7ba588317b7e70056fb94feeaf5fbd34c5ab",
+      "bytes": 35727
+    },
+    "paper_numbers_notes.csv": {
+      "sha256": "ff66b58dd656e25812710b4251e37c792e817d7518fef4704c2b4f6e6a82f897",
+      "bytes": 6805
+    },
+    "methods_facts.md": {
+      "sha256": "17c19fecd94eacb9b45dbc3a23e0299a4e77b33a683f7a92cde1a985f26e1e8c",
+      "bytes": 9962
+    },
+    "methods_facts_per_subject.csv": {
+      "sha256": "70a224e5e21e2ca26e0e60dad88d5c666dbd96d63d5695dd6dc10461c9b4ec69",
+      "bytes": 8813
+    },
+    "fig1_accuracy_ladder.pdf": {
+      "sha256": "28da9b2de1350c0ac509914727c0f1f2bb9f275830b456650a6e5e0876fc96b6",
+      "bytes": 26095
+    },
+    "fig2_theta_sign_consistency.pdf": {
+      "sha256": "8da564703b7805c8b36aa21ce435960534b77fc0ef615219f214326f0ce42449",
+      "bytes": 48285
+    },
+    "fig3_calibration.pdf": {
+      "sha256": "c012647763e92e2f836c83b42f39429866d85847c401881695033e2fb1aa578e",
+      "bytes": 14793
+    }
+  },
+  "outputs": {
+    "braboszcz_all_subjects_features.csv": {
+      "dataset": "braboszcz",
+      "n_rows": 24036,
+      "n_subjects": 56,
+      "conditions": {
+        "IMW1": 8100,
+        "IMW2": 8016,
+        "MED": 7920
+      },
+      "sha256": "9496ac1272df09cfb06c3d9b61d26517500ab96e6dde5ef418069718e35ffafa",
+      "n_feature_columns": 196,
+      "has_nonfinite": false
+    },
+    "brandmeyer_all_subjects_features.csv": {
+      "dataset": "brandmeyer",
+      "n_rows": 618,
+      "n_subjects": 15,
+      "conditions": {
+        "MED": 440,
+        "MW": 178
+      },
+      "sha256": "71f15da88753b96efc117cd2a4666ab142b61b388ad5aa04c1bf43139bff8172",
+      "n_feature_columns": 196,
+      "has_nonfinite": false
+    },
+    "sky_all_subjects_features.csv": {
+      "dataset": "sky",
+      "n_rows": 2930,
+      "n_subjects": 37,
+      "conditions": {
+        "post": 1451,
+        "pre": 1479
+      },
+      "sha256": "bb12efed64519a8d22487aa0deb6ad693d3e282b2bc914bb7904354329bc1c26",
+      "n_feature_columns": 196,
+      "has_nonfinite": false
+    }
+  }
+}

@@ -1,0 +1,5 @@
+main {'blocked_real': np.float64(0.878), 'blocked_control': np.float64(0.675), 'difference': np.float64(0.202), 'LOSO': np.float64(0.57), 'N': 54, 'N_blocked_paired': 53, 'frontal_theta_frac_subjects_positive': 0.759}
+ep2 {'blocked_real': np.float64(0.886), 'blocked_control': np.float64(0.699), 'difference': np.float64(0.187), 'LOSO': np.float64(0.569), 'N': 54, 'N_blocked_paired': 54, 'frontal_theta_frac_subjects_positive': 0.741}
+ep8 {'blocked_real': np.float64(0.882), 'blocked_control': np.float64(0.666), 'difference': np.float64(0.216), 'LOSO': np.float64(0.566), 'N': 54, 'N_blocked_paired': 53, 'frontal_theta_frac_subjects_positive': 0.792}
+noica {'blocked_real': np.float64(0.873), 'blocked_control': np.float64(0.694), 'difference': np.float64(0.177), 'LOSO': np.float64(0.51), 'N': 54, 'N_blocked_paired': 53, 'frontal_theta_frac_subjects_positive': 0.648}
+ref64 {'blocked_real': np.float64(0.951), 'blocked_control': np.float64(0.682), 'difference': np.float64(0.273), 'LOSO': np.float64(0.613), 'N': 54, 'N_blocked_paired': 50, 'frontal_theta_frac_subjects_positive': 0.755}

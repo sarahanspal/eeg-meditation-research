@@ -1,0 +1,13 @@
+dataset,scheme,model,mean,std,count
+braboszcz,cross,dummy,0.5,0.0,54
+braboszcz,cross,logistic,0.5455945265361535,0.09590333853896346,54
+braboszcz,pooled,dummy,0.5,0.0,54
+braboszcz,pooled,logistic,0.5923629001590466,0.12539858836453935,54
+braboszcz,within,dummy,0.5,0.0,54
+braboszcz,within,logistic,0.5697106304473429,0.12049237597103082,54
+brandmeyer,cross,dummy,0.5,0.0,14
+brandmeyer,cross,logistic,0.5436220312247448,0.11777737597101487,14
+brandmeyer,pooled,dummy,0.5,0.0,14
+brandmeyer,pooled,logistic,0.5406463603350278,0.09465576846547427,14
+brandmeyer,within,dummy,0.5,0.0,14
+brandmeyer,within,logistic,0.5260288848531768,0.0746181234450616,14

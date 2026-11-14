@@ -24,14 +24,19 @@ from sklearn.metrics import balanced_accuracy_score
 
 from config import PROCESSED_ROOT
 from harness import filter_multiclass_subjects
+from braboszcz_classifier_cohort import selected_subjects
 
 
 def load_raw_epochs(dataset_name):
     processed_dir = Path(PROCESSED_ROOT) / dataset_name
     X_list, y_list, groups_list = [], [], []
+    allowed = selected_subjects() if dataset_name == 'braboszcz' else None
     for label_file in sorted(processed_dir.glob("*_labels.npy")):
         subject_id = label_file.stem.replace("_labels", "")
-        X = np.load(processed_dir / f"{subject_id}_epochs.npy").astype(np.float64)
+        if allowed is not None and subject_id not in allowed:
+            continue
+        # MNE's CSP requires float64 for its RawArray rank calculation.
+        X = np.load(processed_dir / f"{subject_id}_epochs.npy", mmap_mode="r").astype(np.float64, copy=False)
         y = np.load(label_file)
         X_list.append(X)
         y_list.append(y)
@@ -107,18 +112,18 @@ if __name__ == "__main__":
     overall_start = time.time()
 
     for dataset in ["braboszcz"]:
-        results, excluded = run_losocv_csp_parallel(dataset, n_jobs=4)
+        results, excluded = run_losocv_csp_parallel(dataset, n_jobs=1)
         all_results.extend(results)
         for subj, n_epochs, classes in excluded:
             all_excluded.append({"dataset": dataset, "subject": subj,
                                   "n_epochs": n_epochs, "classes_present": classes})
-        save_results(all_results)
+        save_results(all_results, csv_path="results/harmonized/csp_matched_loso_subject.csv")
         print(f"  [saved progress to results/csp_losocv_persubject.csv]\n", flush=True)
 
     if all_excluded:
-        pd.DataFrame(all_excluded).to_csv("results/csp_losocv_excluded.csv", index=False)
+        pd.DataFrame(all_excluded).to_csv("results/harmonized/csp_matched_loso_excluded.csv", index=False)
 
     total_elapsed = time.time() - overall_start
     print(f"=== ALL DONE in {total_elapsed/60:.1f} min ===")
-    full_df = pd.read_csv("results/csp_losocv_persubject.csv")
+    full_df = pd.read_csv("results/harmonized/csp_matched_loso_subject.csv")
     print(full_df.groupby("dataset")["accuracy"].agg(["mean", "std", "count"]))

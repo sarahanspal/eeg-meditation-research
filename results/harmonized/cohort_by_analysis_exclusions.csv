@@ -1,0 +1,8 @@
+analysis,dataset,subject,reason
+combined_loso,brandmeyer,brandmeyer_sub-017,"single class in held-out data (MED=50, other=0)"
+blocked_control:MED_vs_IMW,braboszcz,braboszcz_sub-097,"<20 epochs in a class (MED=7, IMW2=32); blocked 5-fold CV needs >=20/class"
+blocked_control:think2_first_vs_second_half,braboszcz,braboszcz_sub-097,"<20 epochs in a class (H1=16, H2=16); blocked 5-fold CV needs >=20/class"
+paired_control_MED_vs_IMW_minus_think2_vs_think1,braboszcz,braboszcz_sub-097,missing from MED_vs_IMW (see above)
+feature_sign_consistency,brandmeyer,brandmeyer_sub-004,"<5 epochs in a class (MED=2, non-MED=5)"
+feature_sign_consistency,brandmeyer,brandmeyer_sub-007,"<5 epochs in a class (MED=35, non-MED=4)"
+feature_sign_consistency,brandmeyer,brandmeyer_sub-017,"<5 epochs in a class (MED=50, non-MED=0)"

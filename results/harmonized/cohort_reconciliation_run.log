@@ -1,0 +1,5 @@
+            n_raw_or_metadata  n_prior_feature_cohort  n_classifier_cohort  n_primary_pair  n_file_control  n_experience_metadata
+dataset                                                                                                                          
+braboszcz                  57                      57                   54              56              57                     57
+brandmeyer                 24                      15                    0              17               0                     24
+sky                        40                       0                    0              40               0                     37

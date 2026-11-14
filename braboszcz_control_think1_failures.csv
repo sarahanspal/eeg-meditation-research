@@ -1,0 +1,10 @@
+subject,condition,reason
+sub-009,IMW1,ValueError: cannot reshape array of size 3584 into shape (3)
+sub-010,IMW1,ValueError: cannot reshape array of size 3584 into shape (3)
+sub-011,IMW1,"ValueError: cannot reshape array of size 512 into shape (46,newaxis)"
+sub-014,IMW1,"ValueError: cannot reshape array of size 512 into shape (46,newaxis)"
+sub-015,IMW1,"ValueError: cannot reshape array of size 512 into shape (46,newaxis)"
+sub-019,IMW1,TimeoutError: [Errno 60] Operation timed out
+sub-020,IMW1,TimeoutError: [Errno 60] Operation timed out
+sub-062,IMW1,"ValueError: cannot reshape array of size 1280 into shape (42,newaxis)"
+sub-073,IMW1,IndexError: index -1 is out of bounds for axis 0 with size 0

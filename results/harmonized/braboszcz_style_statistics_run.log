@@ -1,0 +1,22 @@
+                                        mean    ci_low   ci_high     p_fdr
+analysis                  model                                           
+HYT_VIP_ISY_MED_LOSO      dummy     0.333333  0.333333  0.333333       NaN
+                          logistic  0.424832  0.267035  0.593789  0.368982
+HYT_vs_ISY_MED_LOSO       dummy     0.500000  0.500000  0.500000       NaN
+                          logistic  0.609851  0.477783  0.738054  0.186891
+HYT_vs_VIP_MED_LOSO       dummy     0.500000  0.500000  0.500000       NaN
+                          logistic  0.549381  0.388029  0.713142  0.552522
+MED_vs_IMW2_LOSO          dummy     0.500000  0.500000  0.500000       NaN
+                          logistic  0.603167  0.536303  0.671424  0.026874
+MED_vs_IMW2_blocked_intra logistic  0.866274  0.823213  0.911219  0.000250
+VIP_vs_ISY_MED_LOSO       dummy     0.500000  0.500000  0.500000       NaN
+                          logistic  0.704023  0.630589  0.783235  0.000375
+       task    model  n_styles  mean_macro_bal_acc   ci_low  ci_high
+HYT_VIP_ISY    dummy         3            0.333333 0.333333 0.333333
+HYT_VIP_ISY logistic         3            0.461148 0.385535 0.539532
+ HYT_vs_ISY    dummy         2            0.500000 0.500000 0.500000
+ HYT_vs_ISY logistic         2            0.647653 0.555158 0.742339
+ HYT_vs_VIP    dummy         2            0.500000 0.500000 0.500000
+ HYT_vs_VIP logistic         2            0.555810 0.443609 0.670791
+ VIP_vs_ISY    dummy         2            0.500000 0.500000 0.500000
+ VIP_vs_ISY logistic         2            0.669191 0.593934 0.739597

@@ -33,3 +33,5 @@ tqdm==4.70.0
 tzdata==2026.3
 urllib3==2.6.3
 zipp==3.23.1
+pyriemann==0.11
+fooof==1.1.1

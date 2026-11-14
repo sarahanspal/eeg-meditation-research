@@ -1,0 +1,496 @@
+
+=== braboszcz: 54 folds, 1 at a time (started 15:35:09) ===
+  [braboszcz] START fold 1/54 (subject sub-006)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 1/54 (subject sub-006) -> 53.4% in 142.8s
+  [braboszcz] START fold 2/54 (subject sub-007)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 2/54 (subject sub-007) -> 53.1% in 150.4s
+  [braboszcz] START fold 3/54 (subject sub-008)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 3/54 (subject sub-008) -> 48.0% in 163.7s
+  [braboszcz] START fold 4/54 (subject sub-009)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 4/54 (subject sub-009) -> 56.0% in 185.8s
+  [braboszcz] START fold 5/54 (subject sub-010)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 5/54 (subject sub-010) -> 15.7% in 141.5s
+  [braboszcz] START fold 6/54 (subject sub-011)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 6/54 (subject sub-011) -> 53.0% in 143.0s
+  [braboszcz] START fold 7/54 (subject sub-012)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 7/54 (subject sub-012) -> 56.6% in 139.6s
+  [braboszcz] START fold 8/54 (subject sub-013)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 8/54 (subject sub-013) -> 48.5% in 248.0s
+  [braboszcz] START fold 9/54 (subject sub-014)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 9/54 (subject sub-014) -> 44.0% in 246.6s
+  [braboszcz] START fold 10/54 (subject sub-015)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 10/54 (subject sub-015) -> 50.5% in 126.9s
+  [braboszcz] START fold 11/54 (subject sub-016)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 11/54 (subject sub-016) -> 50.0% in 123.4s
+  [braboszcz] START fold 12/54 (subject sub-018)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 12/54 (subject sub-018) -> 5.0% in 99.2s
+  [braboszcz] START fold 13/54 (subject sub-019)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 13/54 (subject sub-019) -> 50.3% in 115.7s
+  [braboszcz] START fold 14/54 (subject sub-020)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 14/54 (subject sub-020) -> 38.4% in 97.8s
+  [braboszcz] START fold 15/54 (subject sub-021)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 15/54 (subject sub-021) -> 51.6% in 109.6s
+  [braboszcz] START fold 16/54 (subject sub-022)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 16/54 (subject sub-022) -> 25.8% in 111.6s
+  [braboszcz] START fold 17/54 (subject sub-023)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 17/54 (subject sub-023) -> 58.7% in 97.6s
+  [braboszcz] START fold 18/54 (subject sub-024)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 18/54 (subject sub-024) -> 63.3% in 97.6s
+  [braboszcz] START fold 19/54 (subject sub-060)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 19/54 (subject sub-060) -> 75.5% in 110.7s
+  [braboszcz] START fold 20/54 (subject sub-061)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 20/54 (subject sub-061) -> 49.2% in 108.7s
+  [braboszcz] START fold 21/54 (subject sub-062)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 21/54 (subject sub-062) -> 52.6% in 101.0s
+  [braboszcz] START fold 22/54 (subject sub-063)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 22/54 (subject sub-063) -> 41.4% in 96.8s
+  [braboszcz] START fold 23/54 (subject sub-065)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 23/54 (subject sub-065) -> 49.6% in 111.1s
+  [braboszcz] START fold 24/54 (subject sub-066)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 24/54 (subject sub-066) -> 63.7% in 95.7s
+  [braboszcz] START fold 25/54 (subject sub-067)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 25/54 (subject sub-067) -> 49.2% in 111.1s
+  [braboszcz] START fold 26/54 (subject sub-068)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 26/54 (subject sub-068) -> 49.5% in 94.0s
+  [braboszcz] START fold 27/54 (subject sub-069)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 27/54 (subject sub-069) -> 49.0% in 98.2s
+  [braboszcz] START fold 28/54 (subject sub-070)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 28/54 (subject sub-070) -> 51.6% in 101.7s
+  [braboszcz] START fold 29/54 (subject sub-071)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 29/54 (subject sub-071) -> 15.5% in 94.7s
+  [braboszcz] START fold 30/54 (subject sub-072)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 30/54 (subject sub-072) -> 47.5% in 121.0s
+  [braboszcz] START fold 31/54 (subject sub-073)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 31/54 (subject sub-073) -> 51.0% in 145.3s
+  [braboszcz] START fold 32/54 (subject sub-074)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 32/54 (subject sub-074) -> 59.2% in 228.5s
+  [braboszcz] START fold 33/54 (subject sub-075)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 33/54 (subject sub-075) -> 47.7% in 204.7s
+  [braboszcz] START fold 34/54 (subject sub-076)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 34/54 (subject sub-076) -> 23.0% in 119.1s
+  [braboszcz] START fold 35/54 (subject sub-077)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 35/54 (subject sub-077) -> 50.0% in 128.0s
+  [braboszcz] START fold 36/54 (subject sub-078)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 36/54 (subject sub-078) -> 45.9% in 106.1s
+  [braboszcz] START fold 37/54 (subject sub-079)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 37/54 (subject sub-079) -> 64.1% in 115.7s
+  [braboszcz] START fold 38/54 (subject sub-080)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 38/54 (subject sub-080) -> 47.7% in 114.3s
+  [braboszcz] START fold 39/54 (subject sub-081)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 39/54 (subject sub-081) -> 52.4% in 131.9s
+  [braboszcz] START fold 40/54 (subject sub-083)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 40/54 (subject sub-083) -> 49.8% in 121.9s
+  [braboszcz] START fold 41/54 (subject sub-084)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 41/54 (subject sub-084) -> 49.2% in 104.7s
+  [braboszcz] START fold 42/54 (subject sub-085)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 42/54 (subject sub-085) -> 50.3% in 168.8s
+  [braboszcz] START fold 43/54 (subject sub-086)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 43/54 (subject sub-086) -> 48.9% in 132.4s
+  [braboszcz] START fold 44/54 (subject sub-087)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 44/54 (subject sub-087) -> 51.2% in 108.8s
+  [braboszcz] START fold 45/54 (subject sub-088)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 45/54 (subject sub-088) -> 64.6% in 129.8s
+  [braboszcz] START fold 46/54 (subject sub-089)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 46/54 (subject sub-089) -> 50.5% in 114.0s
+  [braboszcz] START fold 47/54 (subject sub-090)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 47/54 (subject sub-090) -> 47.3% in 125.3s
+  [braboszcz] START fold 48/54 (subject sub-091)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 48/54 (subject sub-091) -> 43.0% in 116.6s
+  [braboszcz] START fold 49/54 (subject sub-092)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 49/54 (subject sub-092) -> 52.7% in 114.4s
+  [braboszcz] START fold 50/54 (subject sub-093)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 50/54 (subject sub-093) -> 76.3% in 114.8s
+  [braboszcz] START fold 51/54 (subject sub-094)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 51/54 (subject sub-094) -> 44.0% in 145.8s
+  [braboszcz] START fold 52/54 (subject sub-096)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 52/54 (subject sub-096) -> 63.3% in 126.2s
+  [braboszcz] START fold 53/54 (subject sub-097)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 53/54 (subject sub-097) -> 47.9% in 120.4s
+  [braboszcz] START fold 54/54 (subject sub-098)
+Computing rank from data with rank='full'
+    data: rank 14 from info
+Reducing data rank from 14 -> 14
+Estimating class=0 covariance using LEDOIT_WOLF
+Done.
+Estimating class=1 covariance using LEDOIT_WOLF
+Done.
+  [braboszcz] DONE  fold 54/54 (subject sub-098) -> 45.9% in 166.8s
+=== braboszcz FINISHED in 116.5 min: 48.93% ± 12.65% ===
+
+  [saved progress to results/csp_losocv_persubject.csv]
+
+=== ALL DONE in 116.7 min ===
+                mean        std  count
+dataset                               
+braboszcz  48.928954  12.766351     54

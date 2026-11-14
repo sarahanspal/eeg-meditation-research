@@ -1,0 +1,10 @@
+analysis,dataset,N,n_loaded,subject_list_hash,inclusion_rule,source,exclusion_reasons
+combined_loso,braboszcz,54,54,bcd4453bf620,both MED and non-MED epochs present,combined_loso_subject_results.csv,none
+combined_loso,brandmeyer,14,15,5ea83ed4c1bd,both MED and non-MED epochs present,combined_loso_subject_results.csv,"brandmeyer_sub-017: single class in held-out data (MED=50, other=0)"
+blocked_control:MED_vs_IMW,braboszcz,53,54,be3aaf4e18ec,min class epochs >= 20,combined_blocked_controls.csv,"braboszcz_sub-097: <20 epochs in a class (MED=7, IMW2=32); blocked 5-fold CV needs >=20/class"
+blocked_control:think2_vs_think1,braboszcz,54,54,bcd4453bf620,min class epochs >= 20,combined_blocked_controls.csv,none
+blocked_control:think2_first_vs_second_half,braboszcz,53,54,be3aaf4e18ec,min class epochs >= 20,combined_blocked_controls.csv,"braboszcz_sub-097: <20 epochs in a class (H1=16, H2=16); blocked 5-fold CV needs >=20/class"
+paired_control_MED_vs_IMW_minus_think2_vs_think1,braboszcz,53,54,be3aaf4e18ec,subject in both blocked analyses,combined_control_paired_statistics.csv,braboszcz_sub-097: missing from MED_vs_IMW (see above)
+feature_sign_consistency,braboszcz,54,54,bcd4453bf620,>=5 epochs per class,combined_feature_sign_consistency.csv (n column),none
+feature_sign_consistency,brandmeyer,12,15,a87aa8c7b647,>=5 epochs per class,combined_feature_sign_consistency.csv (n column),"brandmeyer_sub-004: <5 epochs in a class (MED=2, non-MED=5); brandmeyer_sub-007: <5 epochs in a class (MED=35, non-MED=4); brandmeyer_sub-017: <5 epochs in a class (MED=50, non-MED=0)"
+calibration_decomposition,braboszcz,54,54,bcd4453bf620,matched 54-subject Braboszcz cohort,calibration_decomposition_subject.csv,none
