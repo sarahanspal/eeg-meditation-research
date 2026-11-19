@@ -1,0 +1,4 @@
+contrast,dataset,n_subjects,n_models,chi2,p,mean_ranks
+IMW2_vs_IMW1,braboszcz,52,8,9.824930619796378,0.19871348371882575,"mlp=3.95, gaussian_nb=4.10, random_forest=4.39, knn=4.48, logistic=4.48, svm_rbf=4.63, svm_linear=4.69, dummy=5.27"
+MED_vs_MW,braboszcz,53,8,21.35930047694757,0.0032732160812266264,"gaussian_nb=3.73, svm_rbf=3.76, random_forest=4.18, knn=4.41, mlp=4.78, logistic=4.80, svm_linear=4.98, dummy=5.36"
+MED_vs_MW,brandmeyer,11,8,4.63990825688073,0.703811026902097,"knn=3.36, dummy=4.36, svm_rbf=4.36, random_forest=4.41, mlp=4.50, svm_linear=4.64, gaussian_nb=4.95, logistic=5.41"

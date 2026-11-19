@@ -1,0 +1,5 @@
+analysis,braboszcz,brandmeyer,braboszcz_ctr
+"MED_vs_MW (classification, theta shift, calibration, aperiodic)",82,11,29
+"IMW2_vs_IMW1 (label control, braboszcz)",78,0,26
+style / meditators vs ctr on MED epochs,84,14,30
+meditators vs ctr on IMW2 epochs,82,0,29

@@ -1,0 +1,3 @@
+metric,value,n_subjects,n_epochs,epochs,subjects
+dataset_identity_bal_acc,0.8532659990349434,68,7445,MED,all version 2 subjects
+dataset_identity_bal_acc,0.9025949896262349,32,2640,MED,himalayan class only (braboszcz HYT vs brandmeyer)
