@@ -22,6 +22,7 @@
 #run from the repo root:
 #.venv/bin/python ch64/style_classification_64.py --jobs 4
 #.venv/bin/python ch64/style_classification_64.py --n-brab 3 --n-brand 2 --n-ctr 3   (test run)
+#.venv/bin/python ch64/style_classification_64.py --models dummy --update   (re-run one model only)
 import argparse
 import time
 
@@ -45,14 +46,17 @@ SEED = 42
 
 #models
 
-def make_model(name):
+def make_model(name, seed=SEED):
     #the models from classifier_comparison_64.py, except the dummy. here every
     #held-out subject has one class and the classes get equal total weight, so
     #"most frequent" is an exact tie decided by rounding, and it flips against the
     #held-out subject's class (scores below chance). a uniform random guess is the
     #honest chance baseline for this design.
+    #the dummy needs a different seed for every held-out subject: with one fixed
+    #seed every subject gets the same guess sequence, the guesses are no longer
+    #independent and the sign-flip p value is wrong.
     if name == 'dummy':
-        return clf().set_params(clf=DummyClassifier(strategy='uniform', random_state=SEED))
+        return clf().set_params(clf=DummyClassifier(strategy='uniform', random_state=seed))
     return make_models([name])[name]
 
 
@@ -85,13 +89,13 @@ def residualize_age(Xtr, age_tr, Xte, age_te):
 
 #one fold
 
-def run_fold(name, X, y, age, tr, te, n_classes, age_resid):
+def run_fold(name, X, y, age, tr, te, n_classes, age_resid, seed=SEED):
     #fit one model on the training subjects, predict the held-out subject's epochs
     quiet_blas_warnings()
     Xtr, Xte = X[tr], X[te]
     if age_resid:
         Xtr, Xte = residualize_age(Xtr, age[tr], Xte, age[te])
-    model = make_model(name)
+    model = make_model(name, seed)
     fit_weighted(model, Xtr, y[tr], equal_class_weights(y[tr]))
     pred = model.predict(Xte)
     counts = np.bincount(pred, minlength=n_classes)
@@ -110,14 +114,16 @@ def run_loso(d, feats, classes, analysis, models, jobs=1, age_resid=False):
     subjects = d.drop_duplicates('subj').set_index('subj')
 
     tasks = []
-    for subj in subjects.index:
+    for i, subj in enumerate(subjects.index):
         te = s == subj
         tr = ~te
         #every class has to be in the training fold
         if np.unique(y[tr]).size < len(classes):
             continue
         for name in models:
-            tasks.append((subj, delayed(run_fold)(name, X, y, age, tr, te, len(classes), age_resid)))
+            #seed differs per held-out subject (only the dummy uses it)
+            tasks.append((subj, delayed(run_fold)(name, X, y, age, tr, te, len(classes),
+                                                  age_resid, SEED + i)))
     if not tasks:
         print(f'  {analysis}: not enough subjects per class for leave-one-subject-out, skipped')
         return pd.DataFrame()
@@ -211,7 +217,10 @@ def transfer_test(train, test, feats, models):
         model = make_model(name)
         fit_weighted(model, X, y, equal_class_weights(y))
         votes = []
-        for subj, g in test.groupby('subj'):
+        for i, (subj, g) in enumerate(test.groupby('subj')):
+            #new random guesses for every brandmeyer subject (dummy only)
+            if name == 'dummy':
+                model.set_params(clf__random_state=SEED + i)
             counts = np.bincount(model.predict(g[feats].to_numpy(float)), minlength=len(STYLES))
             vote = STYLES[int(np.argmax(counts))]
             votes.append(vote)
@@ -230,6 +239,9 @@ def main():
     add_subset_args(parser)
     parser.add_argument('--jobs', type=int, default=1, help='parallel folds')
     parser.add_argument('--models', nargs='+', default=MODEL_NAMES, choices=MODEL_NAMES)
+    parser.add_argument('--update', action='store_true',
+                        help='only re-run --models and swap their rows into the existing result '
+                             'files, keeping the other models (summary and fdr are recomputed over all)')
     args = parser.parse_args()
     out = output_dir(args)
     threadpool_limits(limits=1)
@@ -295,11 +307,21 @@ def main():
 
     #c) transfer test
     transfer, transfer_preds = transfer_test(v1, brand_med, feats, args.models)
-    transfer.to_csv(out / 'style_transfer_brandmeyer.csv', index=False)
 
     #save everything
     res = pd.concat([r for r in results if len(r)], ignore_index=True)
     res = pd.concat([res, transfer_preds], ignore_index=True)
+
+    if args.update:
+        #keep the old rows of every model we did not re-run
+        old = pd.read_csv(out / 'style_subject_predictions.csv')
+        res = pd.concat([old[~old.model.isin(args.models)], res], ignore_index=True)
+        old_transfer = pd.read_csv(out / 'style_transfer_brandmeyer.csv')
+        transfer = pd.concat([old_transfer[~old_transfer.model.isin(args.models)], transfer],
+                             ignore_index=True)
+        print(f'updated rows for {args.models}, kept the other models', flush=True)
+
+    transfer.to_csv(out / 'style_transfer_brandmeyer.csv', index=False)
     res.to_csv(out / 'style_subject_predictions.csv', index=False)
     loso = res[res.analysis != 'transfer_braboszcz_to_brandmeyer']
     summary = summarize(loso, chance_of)
