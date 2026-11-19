@@ -6,6 +6,13 @@
 #imw2 vs imw1 label control: braboszcz, within-dataset only
 #learning curve: 3, 6, 12, 24, 36 training subjects, 5 random draws each
 #spearman: per-subject frontal / midline theta shift vs per-subject accuracy
+#permutation null for the brandmeyer within-dataset logistic: med / mw labels are
+#shuffled inside every subject (each subject keeps its own epoch counts), then the
+#same leave-one-subject-out is rerun. with ~11 subjects loso scores can sit below
+#0.5 by chance, and this shows where the observed mean falls in that null.
+#
+#subjects need >= 5 epochs in both states (common_64.med_vs_mw), the same rule as
+#theta_shift_64.py, so both scripts have the same subjects.
 #
 #needs theta_shift_subject.csv from theta_shift_64.py for the spearman part.
 #
@@ -21,11 +28,12 @@ from sklearn.metrics import balanced_accuracy_score
 from threadpoolctl import threadpool_limits
 
 from common_64 import (STYLES, add_fdr, add_subset_args, cell_weights, clf,
-                       imw2_vs_imw1, load_from_args, med_vs_mw, output_dir, print_table,
-                       subject_summary)
+                       imw2_vs_imw1, load_from_args, med_vs_mw, output_dir, print_cohort,
+                       print_table, subject_summary)
 from combined_analysis import evaluate
 
 TRAIN_SIZES = (3, 6, 12, 24, 36)
+N_NULL = 1000
 N_DRAWS = 5
 SEED = 42
 
@@ -119,14 +127,56 @@ def theta_vs_accuracy(res, shifts):
     return pd.DataFrame(rows)
 
 
+def within_loso_mean(X, y, s, d):
+    #mean over subjects of the within-dataset logistic loso balanced accuracy
+    scores = []
+    for held in np.unique(s):
+        te = s == held
+        tr = ~te
+        if np.unique(y[te]).size < 2 or np.unique(y[tr]).size < 2:
+            continue
+        w = cell_weights(d.iloc[np.flatnonzero(tr)].assign(y=y[tr]))
+        model = clf().fit(X[tr], y[tr], sc__sample_weight=w, clf__sample_weight=w)
+        scores.append(balanced_accuracy_score(y[te], model.predict(X[te])))
+    return float(np.mean(scores))
+
+
+def permutation_null(task, feats, dataset, n_null=N_NULL, seed=SEED):
+    #shuffle the labels inside each subject and rerun the within-dataset loso
+    d = task[task.dataset == dataset].reset_index(drop=True)
+    X = d[feats].to_numpy(float)
+    y = d.y.to_numpy()
+    s = d.subj.to_numpy()
+    observed = within_loso_mean(X, y, s, d)
+    rng = np.random.default_rng(seed)
+    groups = [np.flatnonzero(s == subj) for subj in np.unique(s)]
+    null = np.empty(n_null)
+    for i in range(n_null):
+        yp = y.copy()
+        for idx in groups:
+            yp[idx] = rng.permutation(y[idx])
+        null[i] = within_loso_mean(X, yp, s, d)
+    p_two_sided = (1 + np.sum(np.abs(null - 0.5) >= abs(observed - 0.5))) / (n_null + 1)
+    p_below = (1 + np.sum(null <= observed)) / (n_null + 1)
+    return pd.DataFrame([dict(dataset=dataset, scheme='within', model='logistic',
+                              n_subjects=len(groups), observed_mean=observed, n_null=n_null,
+                              null_mean=null.mean(), null_ci_low=np.percentile(null, 2.5),
+                              null_ci_high=np.percentile(null, 97.5),
+                              p_two_sided_vs_0p5=p_two_sided, p_observed_or_lower=p_below)])
+
+
 def main():
     parser = argparse.ArgumentParser()
     add_subset_args(parser)
+    parser.add_argument('--n-null', type=int, default=N_NULL,
+                        help='label permutations for the brandmeyer within-dataset null (0 = skip)')
     args = parser.parse_args()
     out = output_dir(args)
     threadpool_limits(limits=1)
 
     d, feats = load_from_args(args)
+    print_cohort(d, ['MED_vs_MW (classification, theta shift, calibration, aperiodic)',
+                     'IMW2_vs_IMW1 (label control, braboszcz)'])
     main_task = med_vs_mw(d)
     control = imw2_vs_imw1(d)
     print(f'features: {len(feats)}  subjects: {main_task.subj.nunique()}  epochs: {len(main_task)}')
@@ -145,6 +195,12 @@ def main():
     summary = summarize(res)
     summary.to_csv(out / 'population_summary.csv', index=False)
     print_table('loso summary (balanced accuracy, subject = unit)', summary)
+
+    #permutation null for the brandmeyer within-dataset logistic
+    if args.n_null > 0 and (main_task.dataset == 'brandmeyer').any():
+        null = permutation_null(main_task, feats, 'brandmeyer', args.n_null)
+        null.to_csv(out / 'population_permutation_null.csv', index=False)
+        print_table('permutation null, brandmeyer within-dataset logistic', null)
 
     #learning curve on med vs mind wandering
     lc = learning_curve(main_task, feats)

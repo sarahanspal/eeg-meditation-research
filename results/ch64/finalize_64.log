@@ -1,0 +1,192 @@
+
+subjects passing the cohort rule
+                                                       analysis  braboszcz  brandmeyer  braboszcz_ctr
+MED_vs_MW (classification, theta shift, calibration, aperiodic)         82          11             29
+                        IMW2_vs_IMW1 (label control, braboszcz)         78           0             26
+                        style / meditators vs ctr on MED epochs         84          14             30
+                               meditators vs ctr on IMW2 epochs         82           0             29
+
+population summary (final)
+    contrast    dataset scheme    model  n_subjects   mean  ci_low  ci_high  p_vs_chance  p_fdr_bh
+IMW2_vs_IMW1  braboszcz within    dummy          52    0.5     0.5      0.5            1       NaN
+IMW2_vs_IMW1  braboszcz within logistic          52 0.5207  0.4986   0.5442      0.08325    0.1942
+   MED_vs_MW  braboszcz  cross    dummy          53    0.5     0.5      0.5            1       NaN
+   MED_vs_MW  braboszcz  cross logistic          53 0.5123  0.4808   0.5456       0.4701    0.4701
+   MED_vs_MW  braboszcz pooled    dummy          53    0.5     0.5      0.5            1       NaN
+   MED_vs_MW  braboszcz pooled logistic          53 0.5446  0.5092   0.5828       0.0198    0.1386
+   MED_vs_MW  braboszcz within    dummy          53    0.5     0.5      0.5            1       NaN
+   MED_vs_MW  braboszcz within logistic          53 0.5202  0.4854   0.5572       0.2857       0.4
+   MED_vs_MW brandmeyer  cross    dummy          11    0.5     0.5      0.5            1       NaN
+   MED_vs_MW brandmeyer  cross logistic          11 0.5346  0.4972   0.5787       0.1483    0.2596
+   MED_vs_MW brandmeyer pooled    dummy          11    0.5     0.5      0.5            1       NaN
+   MED_vs_MW brandmeyer pooled logistic          11 0.5277  0.5059   0.5541      0.04055    0.1419
+   MED_vs_MW brandmeyer within    dummy          11    0.5     0.5      0.5            1       NaN
+   MED_vs_MW brandmeyer within logistic          11 0.4847  0.4537   0.5152       0.3688    0.4303
+
+classifier comparison summary (final)
+    contrast    dataset         model  n_subjects   mean  ci_low  ci_high  p_vs_chance  median_fit_seconds  p_fdr_bh
+IMW2_vs_IMW1  braboszcz         dummy          52    0.5     0.5      0.5            1               1.128         1
+IMW2_vs_IMW1  braboszcz   gaussian_nb          52 0.5296  0.5068   0.5543       0.0147               1.236    0.0882
+IMW2_vs_IMW1  braboszcz           knn          52 0.5128  0.4963   0.5289       0.1462               1.311     0.319
+IMW2_vs_IMW1  braboszcz      logistic          52 0.5207  0.4986   0.5442      0.08325               4.398    0.2684
+IMW2_vs_IMW1  braboszcz           mlp          52 0.5306   0.512   0.5503      0.00215               5.703    0.0258
+IMW2_vs_IMW1  braboszcz random_forest          52 0.5195   0.489    0.548        0.208                91.9    0.4161
+IMW2_vs_IMW1  braboszcz    svm_linear          52 0.5185  0.4971   0.5414       0.1118               4.993    0.2684
+IMW2_vs_IMW1  braboszcz       svm_rbf          52 0.5268  0.4998    0.554       0.0588               34.31    0.2352
+   MED_vs_MW  braboszcz         dummy          53    0.5     0.5      0.5            1               1.081         1
+   MED_vs_MW  braboszcz   gaussian_nb          53 0.5712  0.5319   0.6087      0.00085               1.231    0.0204
+   MED_vs_MW  braboszcz           knn          53 0.5241  0.4965   0.5527        0.106               1.297    0.2684
+   MED_vs_MW  braboszcz      logistic          53 0.5202  0.4854   0.5572       0.2857               4.176    0.4897
+   MED_vs_MW  braboszcz           mlp          53 0.5315  0.4948   0.5698       0.1087               4.427    0.2684
+   MED_vs_MW  braboszcz random_forest          53 0.5473  0.5013   0.5923        0.057               83.27    0.2352
+   MED_vs_MW  braboszcz    svm_linear          53 0.5138   0.478   0.5513        0.475               4.425    0.7125
+   MED_vs_MW  braboszcz       svm_rbf          53 0.5595  0.5171    0.601      0.00915               24.57    0.0732
+   MED_vs_MW brandmeyer         dummy          11    0.5     0.5      0.5            1             0.03085         1
+   MED_vs_MW brandmeyer   gaussian_nb          11 0.4835    0.44   0.5227       0.5637              0.0366    0.7958
+   MED_vs_MW brandmeyer           knn          11 0.5376  0.4792   0.5906        0.228             0.03289    0.4209
+   MED_vs_MW brandmeyer      logistic          11 0.4847  0.4537   0.5152       0.3688             0.09056    0.5901
+   MED_vs_MW brandmeyer           mlp          11 0.4992  0.4612   0.5372       0.9769              0.1231         1
+   MED_vs_MW brandmeyer random_forest          11 0.5016  0.4729   0.5302       0.9089               1.109         1
+   MED_vs_MW brandmeyer    svm_linear          11 0.4938  0.4485   0.5384        0.796              0.1145         1
+   MED_vs_MW brandmeyer       svm_rbf          11 0.5024  0.4729   0.5316       0.8943              0.0806         1
+
+friedman (final)
+    contrast    dataset  n_subjects  n_models  chi2        p                                                                                                         mean_ranks
+IMW2_vs_IMW1  braboszcz          52         8 9.825   0.1987 mlp=3.95, gaussian_nb=4.10, random_forest=4.39, knn=4.48, logistic=4.48, svm_rbf=4.63, svm_linear=4.69, dummy=5.27
+   MED_vs_MW  braboszcz          53         8 21.36 0.003273 gaussian_nb=3.73, svm_rbf=3.76, random_forest=4.18, knn=4.41, mlp=4.78, logistic=4.80, svm_linear=4.98, dummy=5.36
+   MED_vs_MW brandmeyer          11         8  4.64   0.7038 knn=3.36, dummy=4.36, svm_rbf=4.36, random_forest=4.41, mlp=4.50, svm_linear=4.64, gaussian_nb=4.95, logistic=5.41
+
+real minus control (final)
+        model  n_subjects  mean_med_vs_mw  mean_control  mean_difference    ci_low  ci_high  p_signflip  p_fdr_bh
+        dummy          52             0.5           0.5                0         0        0           1       NaN
+  gaussian_nb          52          0.5652        0.5296          0.03554 -0.009522  0.07872      0.1205    0.7351
+          knn          52          0.5211        0.5128         0.008309  -0.01995  0.03801      0.5891    0.9043
+     logistic          52          0.5156        0.5207        -0.005119  -0.04968  0.03776      0.8298    0.9043
+          mlp          52          0.5282        0.5306          -0.0024  -0.03975  0.03753      0.9043    0.9043
+random_forest          52           0.543        0.5195          0.02347  -0.03103   0.0785       0.409    0.9043
+   svm_linear          52          0.5091        0.5185        -0.009385  -0.05379  0.03348      0.6901    0.9043
+      svm_rbf          52          0.5546        0.5268          0.02786  -0.01373  0.06974        0.21    0.7351
+
+style summary (final)
+                            analysis         model  n_subjects            n_per_class  chance  macro_bal_acc  ci_low  ci_high  p_vs_chance  vote_bal_acc  p_fdr_bh
+                          HYT_vs_ISY         dummy          36         HYT=18, ISY=18     0.5            0.5     0.5      0.5            1        0.3056         1
+                          HYT_vs_ISY   gaussian_nb          36         HYT=18, ISY=18     0.5         0.6574  0.5622     0.75      0.00535        0.6944    0.0642
+                          HYT_vs_ISY           knn          36         HYT=18, ISY=18     0.5         0.6252  0.5405   0.7035       0.0095        0.6944    0.0882
+                          HYT_vs_ISY      logistic          36         HYT=18, ISY=18     0.5         0.5793  0.4669   0.6875       0.1941        0.5556    0.3495
+                          HYT_vs_ISY           mlp          36         HYT=18, ISY=18     0.5         0.6468  0.5459   0.7463       0.0139        0.6389    0.1112
+                          HYT_vs_ISY random_forest          36         HYT=18, ISY=18     0.5         0.6209  0.5238   0.7144      0.02835        0.6389    0.1201
+                          HYT_vs_ISY    svm_linear          36         HYT=18, ISY=18     0.5         0.5475  0.4305   0.6626       0.4519        0.5278    0.6257
+                          HYT_vs_ISY       svm_rbf          36         HYT=18, ISY=18     0.5         0.6221  0.5149   0.7234       0.0436        0.6667    0.1536
+                          HYT_vs_VIP         dummy          36         HYT=18, VIP=18     0.5            0.5     0.5      0.5            1        0.3333         1
+                          HYT_vs_VIP   gaussian_nb          36         HYT=18, VIP=18     0.5         0.6971  0.5831   0.8041       0.0019        0.7222    0.0456
+                          HYT_vs_VIP           knn          36         HYT=18, VIP=18     0.5         0.6158  0.5147   0.7114      0.03325        0.6667     0.133
+                          HYT_vs_VIP      logistic          36         HYT=18, VIP=18     0.5          0.544  0.4332   0.6518       0.4417        0.5278    0.6236
+                          HYT_vs_VIP           mlp          36         HYT=18, VIP=18     0.5         0.5891   0.473   0.6986        0.131        0.5833    0.2549
+                          HYT_vs_VIP random_forest          36         HYT=18, VIP=18     0.5         0.6397  0.5273   0.7486       0.0203        0.5833    0.1201
+                          HYT_vs_VIP    svm_linear          36         HYT=18, VIP=18     0.5         0.5618  0.4518   0.6679       0.2767        0.6111    0.4574
+                          HYT_vs_VIP       svm_rbf          36         HYT=18, VIP=18     0.5         0.5721   0.455    0.686       0.2372        0.5833    0.4066
+                          VIP_vs_ISY         dummy          36         ISY=18, VIP=18     0.5            0.5     0.5      0.5            1        0.4167         1
+                          VIP_vs_ISY   gaussian_nb          36         ISY=18, VIP=18     0.5         0.5901  0.4771   0.7008       0.1238        0.6111    0.2511
+                          VIP_vs_ISY           knn          36         ISY=18, VIP=18     0.5         0.5243  0.4279   0.6203        0.626        0.4722    0.7639
+                          VIP_vs_ISY      logistic          36         ISY=18, VIP=18     0.5         0.6124  0.5135   0.7134       0.0491        0.6944    0.1579
+                          VIP_vs_ISY           mlp          36         ISY=18, VIP=18     0.5         0.5516  0.4588   0.6484       0.3282        0.5833    0.5196
+                          VIP_vs_ISY random_forest          36         ISY=18, VIP=18     0.5         0.5067  0.4037   0.6136       0.9042        0.4167         1
+                          VIP_vs_ISY    svm_linear          36         ISY=18, VIP=18     0.5         0.6308  0.5288   0.7333      0.02775          0.75    0.1201
+                          VIP_vs_ISY       svm_rbf          36         ISY=18, VIP=18     0.5         0.5408  0.4413   0.6445       0.4966        0.5556    0.6385
+              meditators_vs_ctr_IMW2         dummy          82   CTR=29, meditator=53     0.5            0.5     0.5      0.5            1         0.529         1
+              meditators_vs_ctr_IMW2   gaussian_nb          82   CTR=29, meditator=53     0.5         0.5337  0.4551   0.6158       0.4148        0.5494    0.5973
+              meditators_vs_ctr_IMW2           knn          82   CTR=29, meditator=53     0.5         0.4944  0.4405   0.5531       0.8505        0.5088         1
+              meditators_vs_ctr_IMW2      logistic          82   CTR=29, meditator=53     0.5          0.536  0.4637   0.6106       0.3818        0.5748    0.5611
+              meditators_vs_ctr_IMW2           mlp          82   CTR=29, meditator=53     0.5         0.5698   0.495   0.6445       0.0985        0.5859    0.2206
+              meditators_vs_ctr_IMW2 random_forest          82   CTR=29, meditator=53     0.5         0.5292  0.4806   0.5824       0.5274        0.5407    0.6547
+              meditators_vs_ctr_IMW2    svm_linear          82   CTR=29, meditator=53     0.5         0.5007  0.4303   0.5724       0.9872        0.5387         1
+              meditators_vs_ctr_IMW2       svm_rbf          82   CTR=29, meditator=53     0.5         0.5805  0.5162   0.6474      0.05835        0.6236     0.175
+meditators_vs_ctr_IMW2_age_regressed         dummy          82   CTR=29, meditator=53     0.5            0.5     0.5      0.5            1         0.529         1
+meditators_vs_ctr_IMW2_age_regressed   gaussian_nb          82   CTR=29, meditator=53     0.5         0.5373  0.4572   0.6188       0.3705        0.5511    0.5558
+meditators_vs_ctr_IMW2_age_regressed           knn          82   CTR=29, meditator=53     0.5         0.4799  0.4221   0.5384       0.5136        0.4632    0.6488
+meditators_vs_ctr_IMW2_age_regressed      logistic          82   CTR=29, meditator=53     0.5         0.5287  0.4571   0.6012        0.476        0.5481    0.6385
+meditators_vs_ctr_IMW2_age_regressed           mlp          82   CTR=29, meditator=53     0.5         0.5653  0.4935   0.6383       0.1207        0.5859    0.2511
+meditators_vs_ctr_IMW2_age_regressed random_forest          82   CTR=29, meditator=53     0.5          0.533  0.4852   0.5858        0.481        0.5501    0.6385
+meditators_vs_ctr_IMW2_age_regressed    svm_linear          82   CTR=29, meditator=53     0.5         0.5175   0.448   0.5862       0.6629        0.5576    0.7954
+meditators_vs_ctr_IMW2_age_regressed       svm_rbf          82   CTR=29, meditator=53     0.5         0.5721  0.5093   0.6391       0.0993        0.5986    0.2206
+               meditators_vs_ctr_MED         dummy          84   CTR=30, meditator=54     0.5            0.5     0.5      0.5            1        0.6019         1
+               meditators_vs_ctr_MED   gaussian_nb          84   CTR=30, meditator=54     0.5         0.5296  0.4593   0.6021       0.4903        0.5222    0.6385
+               meditators_vs_ctr_MED           knn          84   CTR=30, meditator=54     0.5         0.5423  0.4824   0.6065       0.1934        0.5778    0.3495
+               meditators_vs_ctr_MED      logistic          84   CTR=30, meditator=54     0.5         0.5875  0.5152   0.6579       0.0244        0.6037    0.1201
+               meditators_vs_ctr_MED           mlp          84   CTR=30, meditator=54     0.5         0.6481  0.5703   0.7236       0.0007        0.7093    0.0396
+               meditators_vs_ctr_MED random_forest          84   CTR=30, meditator=54     0.5          0.584  0.5217   0.6525      0.07805        0.5815    0.2081
+               meditators_vs_ctr_MED    svm_linear          84   CTR=30, meditator=54     0.5         0.5665  0.4938   0.6394       0.0948        0.5611    0.2206
+               meditators_vs_ctr_MED       svm_rbf          84   CTR=30, meditator=54     0.5         0.6188  0.5508   0.6869       0.0034        0.6519   0.05328
+ meditators_vs_ctr_MED_age_regressed         dummy          84   CTR=30, meditator=54     0.5            0.5     0.5      0.5            1        0.6019         1
+ meditators_vs_ctr_MED_age_regressed   gaussian_nb          84   CTR=30, meditator=54     0.5         0.5401  0.4671   0.6144       0.3442        0.5648    0.5273
+ meditators_vs_ctr_MED_age_regressed           knn          84   CTR=30, meditator=54     0.5          0.539  0.4783   0.6027       0.2294          0.55    0.4029
+ meditators_vs_ctr_MED_age_regressed      logistic          84   CTR=30, meditator=54     0.5         0.5894  0.5185   0.6614        0.024        0.5963    0.1201
+ meditators_vs_ctr_MED_age_regressed           mlp          84   CTR=30, meditator=54     0.5         0.6392  0.5639    0.714       0.0011        0.7167    0.0396
+ meditators_vs_ctr_MED_age_regressed random_forest          84   CTR=30, meditator=54     0.5         0.5846  0.5217   0.6551       0.0828        0.5889    0.2129
+ meditators_vs_ctr_MED_age_regressed    svm_linear          84   CTR=30, meditator=54     0.5         0.5734     0.5   0.6472         0.07        0.5611    0.2016
+ meditators_vs_ctr_MED_age_regressed       svm_rbf          84   CTR=30, meditator=54     0.5         0.6048  0.5381   0.6728       0.0098        0.6519    0.0882
+            three_class_v1_braboszcz         dummy          54 HYT=18, ISY=18, VIP=18  0.3333         0.3333  0.3333   0.3333            1        0.2407         1
+            three_class_v1_braboszcz   gaussian_nb          54 HYT=18, ISY=18, VIP=18  0.3333         0.4672  0.3944   0.5428       0.0037        0.4815   0.05328
+            three_class_v1_braboszcz           knn          54 HYT=18, ISY=18, VIP=18  0.3333         0.4182  0.3508   0.4877       0.0282        0.4259    0.1201
+            three_class_v1_braboszcz      logistic          54 HYT=18, ISY=18, VIP=18  0.3333         0.3823  0.2992   0.4652       0.2795        0.4074    0.4574
+            three_class_v1_braboszcz           mlp          54 HYT=18, ISY=18, VIP=18  0.3333         0.3745  0.2962   0.4556        0.332        0.3704    0.5196
+            three_class_v1_braboszcz random_forest          54 HYT=18, ISY=18, VIP=18  0.3333         0.4062  0.3323   0.4855      0.07455        0.3519    0.2064
+            three_class_v1_braboszcz    svm_linear          54 HYT=18, ISY=18, VIP=18  0.3333         0.3946  0.3126   0.4803       0.1807        0.4259    0.3424
+            three_class_v1_braboszcz       svm_rbf          54 HYT=18, ISY=18, VIP=18  0.3333         0.4046   0.322   0.4905       0.1255        0.4444    0.2511
+      three_class_v2_with_brandmeyer         dummy          68 HYT=32, ISY=18, VIP=18  0.3333         0.3333  0.3333   0.3333            1        0.2836         1
+      three_class_v2_with_brandmeyer   gaussian_nb          68 HYT=32, ISY=18, VIP=18  0.3333         0.4135  0.3422   0.4847      0.04035        0.4097    0.1529
+      three_class_v2_with_brandmeyer           knn          68 HYT=32, ISY=18, VIP=18  0.3333         0.3977  0.3377   0.4593       0.0448        0.3808    0.1536
+      three_class_v2_with_brandmeyer      logistic          68 HYT=32, ISY=18, VIP=18  0.3333         0.4164  0.3424   0.4944      0.05045        0.4734    0.1579
+      three_class_v2_with_brandmeyer           mlp          68 HYT=32, ISY=18, VIP=18  0.3333         0.4268  0.3534   0.5007      0.02295        0.4572    0.1201
+      three_class_v2_with_brandmeyer random_forest          68 HYT=32, ISY=18, VIP=18  0.3333         0.3977  0.3274   0.4705      0.09075        0.3495    0.2206
+      three_class_v2_with_brandmeyer    svm_linear          68 HYT=32, ISY=18, VIP=18  0.3333         0.4015  0.3284   0.4777       0.1011        0.4282    0.2206
+      three_class_v2_with_brandmeyer       svm_rbf          68 HYT=32, ISY=18, VIP=18  0.3333          0.431  0.3584   0.5076      0.02485        0.4699    0.1201
+
+calibration summary (final)
+        task    dataset  seconds_per_class  mean_calibration_seconds  n_subjects   base  bias_only  full_update  gain_bias_mean  gain_bias_ci_low  gain_bias_ci_high  gain_bias_p  gain_full_mean  gain_full_ci_low  gain_full_ci_high  gain_full_p
+IMW2_vs_IMW1  braboszcz                  8                        16          52 0.5207     0.5244       0.5571        0.003727          -0.01156            0.02137       0.6751         0.03641           0.02034              0.056        5e-05
+IMW2_vs_IMW1  braboszcz                 16                        32          51 0.5134     0.5162       0.5713        0.002853          -0.01281            0.01993       0.7481         0.05791           0.03752            0.08209        5e-05
+IMW2_vs_IMW1  braboszcz                 32                        64          50 0.5159     0.5173       0.6022        0.001347          -0.01356             0.0171        0.865         0.08624           0.06278             0.1123        5e-05
+IMW2_vs_IMW1  braboszcz                 64                       128          50 0.5146     0.5195       0.6334        0.004942          -0.01059            0.02222       0.5677          0.1189           0.09203              0.149        5e-05
+IMW2_vs_IMW1  braboszcz                128                       256          47  0.518     0.5282       0.6714         0.01017         -0.006798            0.02954       0.2751          0.1534            0.1213             0.1862        5e-05
+ MED_vs_IMW2  braboszcz                  8                        16          52 0.5447     0.5504       0.6089        0.005607          -0.01252            0.02477        0.554          0.0642           0.04906            0.08071        5e-05
+ MED_vs_IMW2  braboszcz                 16                        32          52 0.5428     0.5617       0.6451         0.01894          0.001613            0.03663       0.0403          0.1022           0.08213             0.1236        5e-05
+ MED_vs_IMW2  braboszcz                 32                        64          51 0.5415     0.5642       0.6964         0.02265          0.004541             0.0414      0.02015          0.1549            0.1269              0.185        5e-05
+ MED_vs_IMW2  braboszcz                 64                       128          49  0.548     0.5746       0.7525         0.02657          0.008387            0.04596       0.0075          0.2045            0.1734             0.2362        5e-05
+ MED_vs_IMW2  braboszcz                128                       256          46  0.555     0.5852       0.8051         0.03016            0.0102            0.05204       0.0056          0.2501            0.2148             0.2857        5e-05
+ MED_vs_IMW2 brandmeyer                 16                     30.49           7 0.5261     0.5205       0.5764       -0.005563          -0.04818            0.03597       0.8103         0.05031         -0.005734             0.1012       0.1423
+ MED_vs_IMW2 brandmeyer                 32                     61.12           5 0.5275      0.501       0.5487        -0.02657          -0.09543            0.04148       0.6229         0.02112          -0.03848            0.09462       0.7506
+
+null-adjusted calibration gain (final)
+ seconds_per_class      gain  med_gain  control_gain  n_subjects  mean_difference    ci_low  ci_high  p_signflip  mean_calibration_seconds  p_fdr_bh
+                 8 gain_bias  0.006777      0.002338          51         0.004438  -0.02004   0.0281      0.7196                        16    0.7196
+                 8 gain_full   0.06484       0.03714          51           0.0277  0.004586  0.05109      0.0226                        16    0.0226
+                16 gain_bias   0.01625      0.002215          50          0.01404 -0.008167  0.03664      0.2254                      31.9    0.2817
+                16 gain_full    0.1011       0.05888          50           0.0422   0.01298  0.07126      0.0071                      31.9  0.008875
+                32 gain_bias   0.02082    -0.0001497          49          0.02097 -0.002803  0.04439      0.0992                     63.86     0.248
+                32 gain_full    0.1495       0.08645          49          0.06307   0.02937  0.09595      0.0006                     63.86     0.001
+                64 gain_bias   0.02754      0.001982          48          0.02555  0.001534  0.05044     0.05075                       128     0.248
+                64 gain_full    0.2063          0.12          48          0.08636   0.04743   0.1257     0.00015                       128    0.0005
+               128 gain_bias   0.03132       0.01031          44          0.02101 -0.006647  0.05135      0.1578                       256    0.2631
+               128 gain_full    0.2529         0.157          44          0.09596   0.05066   0.1419      0.0002                       256    0.0005
+
+subjects dropped by the cohort rule
+  population MED_vs_MW: dropped 3 subjects
+  population IMW2_vs_IMW1: dropped 2 subjects
+  learning curve: dropped 3 subjects
+  classifier comparison MED_vs_MW: dropped 3 subjects
+  classifier comparison IMW2_vs_IMW1: dropped 2 subjects
+  style HYT_vs_ISY: dropped 0 subjects
+  style HYT_vs_VIP: dropped 0 subjects
+  style VIP_vs_ISY: dropped 0 subjects
+  style meditators_vs_ctr_IMW2: dropped 2 subjects
+  style meditators_vs_ctr_IMW2_age_regressed: dropped 2 subjects
+  style meditators_vs_ctr_MED: dropped 0 subjects
+  style meditators_vs_ctr_MED_age_regressed: dropped 0 subjects
+  style three_class_v1_braboszcz: dropped 0 subjects
+  style three_class_v2_with_brandmeyer: dropped 0 subjects
+  style transfer_braboszcz_to_brandmeyer: dropped 0 subjects
+  calibration MED_vs_IMW2: dropped 0 subjects
+  calibration IMW2_vs_IMW1: dropped 0 subjects
+
+wrote _final files to /Users/sarshanspal/eeg-meditation-research/results/ch64

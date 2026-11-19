@@ -1,0 +1,44 @@
+dataset,subject,reason,traceback
+braboszcz,sub-027,"ValueError: No events produced, check the values of start, stop, and duration","Traceback (most recent call last):
+  File ""/Users/sarshanspal/eeg-meditation-research/ch64/extract_64.py"", line 153, in run_braboszcz
+    ev = mne.make_fixed_length_events(r, duration=EPOCH_LEN_SEC)
+  File ""/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/mne/event.py"", line 993, in make_fixed_length_events
+    raise ValueError(
+ValueError: No events produced, check the values of start, stop, and duration
+"
+braboszcz,sub-056,IndexError: index -1 is out of bounds for axis 0 with size 0,"Traceback (most recent call last):
+  File ""/Users/sarshanspal/eeg-meditation-research/ch64/extract_64.py"", line 138, in run_braboszcz
+    r = load_raw_bdf(str(bdf))
+  File ""/Users/sarshanspal/eeg-meditation-research/braboszcz_feature_extraction.py"", line 187, in load_raw_bdf
+    raw = mne.io.read_raw_bdf(bdf_path, preload=True, verbose=False)
+  File ""/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/mne/io/edf/edf.py"", line 1823, in read_raw_bdf
+    return RawEDF(
+  File ""<decorator-gen-258>"", line 10, in __init__
+  File ""/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/mne/io/edf/edf.py"", line 187, in __init__
+    super().__init__(
+  File ""<decorator-gen-185>"", line 10, in __init__
+  File ""/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/mne/io/base.py"", line 301, in __init__
+    self._preload_data(preload)
+  File ""/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/mne/io/base.py"", line 594, in _preload_data
+    % (0, len(self.times) - 1, 0.0, self.times[-1])
+IndexError: index -1 is out of bounds for axis 0 with size 0
+"
+braboszcz,sub-058,"ValueError: No events produced, check the values of start, stop, and duration","Traceback (most recent call last):
+  File ""/Users/sarshanspal/eeg-meditation-research/ch64/extract_64.py"", line 153, in run_braboszcz
+    ev = mne.make_fixed_length_events(r, duration=EPOCH_LEN_SEC)
+  File ""/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/mne/event.py"", line 993, in make_fixed_length_events
+    raise ValueError(
+ValueError: No events produced, check the values of start, stop, and duration
+"
+braboszcz,sub-059,"ValueError: No events produced, check the values of start, stop, and duration","Traceback (most recent call last):
+  File ""/Users/sarshanspal/eeg-meditation-research/ch64/extract_64.py"", line 153, in run_braboszcz
+    ev = mne.make_fixed_length_events(r, duration=EPOCH_LEN_SEC)
+  File ""/Users/sarshanspal/eeg-meditation-research/.venv/lib/python3.9/site-packages/mne/event.py"", line 993, in make_fixed_length_events
+    raise ValueError(
+ValueError: No events produced, check the values of start, stop, and duration
+"
+brandmeyer,sub-003,RuntimeError: sub-003 has no usable epochs,"Traceback (most recent call last):
+  File ""/Users/sarshanspal/eeg-meditation-research/ch64/extract_64.py"", line 262, in run_brandmeyer
+    raise RuntimeError(f'{sub} has no usable epochs')
+RuntimeError: sub-003 has no usable epochs
+"

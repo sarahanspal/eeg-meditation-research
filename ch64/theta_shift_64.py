@@ -8,6 +8,12 @@
 #sign consistency per channel x band (binomial test, bh-fdr), per dataset and pooled
 #ctr vs matched meditators on the frontal theta shift (mann-whitney + permutation)
 #recording order: med-first vs imw-first in the matched cohort
+#trait like-for-like: the 14-channel trait outcome (cohen d of the per-subject
+#  med - imw2 standardized difference, mean over F3/F4/F7/F8 per channel, matched
+#  meditators minus ctr) on the 64-channel data, on all subjects and on the subjects
+#  that are in both analyses, next to the 14-channel values on those same subjects
+#
+#writes cohort_64.csv: every subject, epochs per condition, and which analyses it is in.
 #
 #the per-subject table (theta_shift_subject.csv) is read by population_64.py.
 #
@@ -20,12 +26,18 @@ import numpy as np
 import pandas as pd
 from scipy.stats import binomtest, mannwhitneyu
 
-from common_64 import (BANDS, FRONTAL, MIDLINE, MW_LABEL, add_fdr, add_subset_args,
-                       band_columns, load_from_args, output_dir, print_table,
+from common_64 import (BANDS, FRONTAL, MIDLINE, MW_LABEL, ROOT, add_fdr, add_subset_args,
+                       band_columns, load_from_args, output_dir, print_cohort, print_table,
                        standardized_differences)
 
 N_PERMUTATIONS = 10000
+N_BOOT = 5000
 SEED = 42
+
+#the 14-channel trait analysis (trait_ctr_vs_experienced.py): its frontal channels
+#and its per-subject values, used for the like-for-like comparison
+TRAIT_14_CHANNELS = ['F3', 'F4', 'F7', 'F8']
+TRAIT_14_FILE = ROOT / 'results' / 'harmonized' / 'trait_ctr_vs_experienced_subject_values.csv'
 
 #the two summary measures used in the group comparisons
 REGION_MEASURES = ['frontal_theta', 'midline_theta']
@@ -117,6 +129,68 @@ def group_sign_row(values, group, measure):
                 median=float(np.median(v)), p_binomial=binomtest(n_pos, len(v), 0.5).pvalue)
 
 
+def cohen_d(a, b):
+    #same formula as trait_ctr_vs_experienced.cohen_d (pooled sd, ddof 1)
+    na, nb = len(a), len(b)
+    sp = np.sqrt(((na - 1) * np.var(a, ddof=1) + (nb - 1) * np.var(b, ddof=1)) / (na + nb - 2))
+    return (np.mean(a) - np.mean(b)) / sp
+
+
+def trait_row(a, b, source, subjects, outcome):
+    #matched meditators (a) minus ctr (b): cohen d with bootstrap ci, plus mann-whitney
+    a = np.asarray(a, float)
+    a = a[np.isfinite(a)]
+    b = np.asarray(b, float)
+    b = b[np.isfinite(b)]
+    row = dict(source=source, subjects=subjects, outcome=outcome, n_meditators=len(a), n_ctr=len(b))
+    if len(a) < 5 or len(b) < 5:
+        return row
+    rng = np.random.default_rng(SEED)
+    boot = [cohen_d(rng.choice(a, len(a)), rng.choice(b, len(b))) for _ in range(N_BOOT)]
+    u, p = mannwhitneyu(a, b, alternative='two-sided')
+    row.update(mean_meditators=a.mean(), mean_ctr=b.mean(), mean_difference=a.mean() - b.mean(),
+               cohens_d=cohen_d(a, b), d_ci_low=np.percentile(boot, 2.5),
+               d_ci_high=np.percentile(boot, 97.5),
+               rank_biserial=2 * u / (len(a) * len(b)) - 1, p_mannwhitney=p)
+    return row
+
+
+def trait_like_for_like(shifts):
+    #the 14-channel outcome on 64-channel data: mean over F3/F4/F7/F8 of the
+    #per-channel standardized med - imw2 difference (theta)
+    brab = shifts[shifts.dataset == 'braboszcz'].copy()
+    brab['d14_frontal'] = brab[[f'{c}_theta' for c in TRAIT_14_CHANNELS]].mean(axis=1, skipna=False)
+    brab['arm'] = np.where(brab['style'] == 'CTR', 'CTR', 'experienced')
+
+    def rows_for(t, source, subjects, outcomes):
+        return [trait_row(t.loc[t.arm == 'experienced', o], t.loc[t.arm == 'CTR', o],
+                          source, subjects, o) for o in outcomes]
+
+    #64-channel, all subjects, both outcomes (the first one is the old 64-channel number)
+    rows = rows_for(brab, '64-channel', 'all', ['frontal_theta', 'd14_frontal'])
+    if not TRAIT_14_FILE.exists():
+        print(f'\n{TRAIT_14_FILE} not found, like-for-like rows against the 14-channel values skipped')
+        return pd.DataFrame(rows)
+
+    old = pd.read_csv(TRAIT_14_FILE)
+    old = old[old.d_MED_minus_IMW2.notna()]
+    new = brab[brab.d14_frontal.notna()]
+    common = set(old.subject) & set(new.subject)
+    #same arm in both tables, otherwise the subject is not comparable
+    arm_old = dict(zip(old.subject, old.arm))
+    common = {s for s in common if arm_old[s] == new.set_index('subject').arm[s]}
+    rows += rows_for(old.rename(columns={'d_MED_minus_IMW2': 'd14_frontal'}), '14-channel', 'all',
+                     ['d14_frontal'])
+    rows += rows_for(old[old.subject.isin(common)].rename(columns={'d_MED_minus_IMW2': 'd14_frontal'}),
+                     '14-channel', 'common', ['d14_frontal'])
+    rows += rows_for(new[new.subject.isin(common)], '64-channel', 'common', ['d14_frontal'])
+    only_old = sorted(set(old.subject) - common)
+    only_new = sorted(set(new.subject) - common)
+    print(f'\ntrait like-for-like: {len(common)} subjects in both, only 14-channel: {only_old}, '
+          f'only 64-channel: {only_new}')
+    return pd.DataFrame(rows)
+
+
 def main():
     parser = argparse.ArgumentParser()
     add_subset_args(parser)
@@ -128,6 +202,10 @@ def main():
     #so the regions stay out of the 384-test fdr family
     band_cols = band_columns(d)
     d, region_cols = add_region_means(d)
+
+    #who is in which analysis, same rule in every script
+    cohort = print_cohort(d)
+    cohort.to_csv(out / 'cohort_64.csv', index=False)
 
     #per-subject shift table, everyone including ctr
     shifts = subject_shifts(d, band_cols + region_cols)
@@ -186,6 +264,14 @@ def main():
     order_tests.to_csv(out / 'theta_recording_order_tests.csv', index=False)
     print_table('recording order: per group', order_groups)
     print_table('recording order: med-first vs imw-first', order_tests)
+    missing_order = matched[matched.order.isna()].subject.tolist()
+    if missing_order:
+        print(f'  no recording order for: {missing_order}')
+
+    #trait: 14-channel outcome on 64-channel data, like for like
+    trait = trait_like_for_like(shifts)
+    trait.to_csv(out / 'theta_trait_like_for_like.csv', index=False)
+    print_table('trait like-for-like (matched meditators minus ctr)', trait)
     print(f'\nwrote results to {out}')
 
 

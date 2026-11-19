@@ -19,12 +19,22 @@
 #of those scores, with a class-stratified bootstrap ci and a sign-flip p vs chance.
 #majority-vote ties go to the first class in the class list.
 #
+#every subset keeps only subjects with >= MIN_EPOCHS epochs in the condition it uses
+#(common_64.keep_min_epochs), the same rule as the other scripts.
+#
+#the dummy (uniform random guess) is scored by its expected accuracy, the mean
+#predicted probability of the true class, which is exactly 1/k. scoring its random
+#hard guesses instead adds noise (sd ~0.045 per subject) that is shared between
+#analyses with the same subjects, and gave baselines a bit below chance.
+#its majority vote still comes from the random guesses.
+#
 #run from the repo root:
 #.venv/bin/python ch64/style_classification_64.py --jobs 4
 #.venv/bin/python ch64/style_classification_64.py --n-brab 3 --n-brand 2 --n-ctr 3   (test run)
 #.venv/bin/python ch64/style_classification_64.py --models dummy --update   (re-run one model only)
 import argparse
 import time
+import zlib
 
 import numpy as np
 import pandas as pd
@@ -36,8 +46,8 @@ from threadpoolctl import threadpool_limits
 
 from classifier_comparison_64 import MODEL_NAMES, fit_weighted, make_models
 from combined_analysis import dataset_probe
-from common_64 import (STYLES, add_fdr, add_subset_args, clf, load_from_args, output_dir,
-                       print_table, quiet_blas_warnings)
+from common_64 import (STYLES, add_fdr, add_subset_args, clf, keep_min_epochs, load_from_args,
+                       output_dir, print_cohort, print_table, quiet_blas_warnings)
 
 N_BOOT = 5000
 N_FLIP = 20000
@@ -100,7 +110,12 @@ def run_fold(name, X, y, age, tr, te, n_classes, age_resid, seed=SEED):
     pred = model.predict(Xte)
     counts = np.bincount(pred, minlength=n_classes)
     true = y[te][0]
-    return dict(model=name, n_epochs=int(te.sum()), frac_correct=float(np.mean(pred == true)),
+    if name == 'dummy':
+        #expected accuracy of the random guess (exactly 1/k), see the header
+        frac = float(np.mean(model.predict_proba(Xte)[:, true]))
+    else:
+        frac = float(np.mean(pred == true))
+    return dict(model=name, n_epochs=int(te.sum()), frac_correct=frac,
                 vote=int(np.argmax(counts)), counts=counts)
 
 
@@ -114,6 +129,8 @@ def run_loso(d, feats, classes, analysis, models, jobs=1, age_resid=False):
     subjects = d.drop_duplicates('subj').set_index('subj')
 
     tasks = []
+    #dummy seed: different for every held-out subject and every analysis
+    base_seed = SEED + zlib.crc32(analysis.encode()) % 1_000_000
     for i, subj in enumerate(subjects.index):
         te = s == subj
         tr = ~te
@@ -123,7 +140,7 @@ def run_loso(d, feats, classes, analysis, models, jobs=1, age_resid=False):
         for name in models:
             #seed differs per held-out subject (only the dummy uses it)
             tasks.append((subj, delayed(run_fold)(name, X, y, age, tr, te, len(classes),
-                                                  age_resid, SEED + i)))
+                                                  age_resid, base_seed + i)))
     if not tasks:
         print(f'  {analysis}: not enough subjects per class for leave-one-subject-out, skipped')
         return pd.DataFrame()
@@ -167,7 +184,8 @@ def macro_signflip(scores, labels, chance, n=N_FLIP, seed=SEED):
     flips = rng.choice([-1, 1], size=(n, len(dev))) * dev
     #macro mean of every flipped row
     null = np.mean([flips[:, labels == c].mean(axis=1) for c in np.unique(labels)], axis=0)
-    return (1 + np.sum(np.abs(null) >= abs(observed))) / (n + 1)
+    #small tolerance: a deviation that is zero up to rounding (e.g. 1/3) must give p = 1
+    return (1 + np.sum(np.abs(null) >= abs(observed) - 1e-12)) / (n + 1)
 
 
 def summarize(res, chance_of):
@@ -247,9 +265,10 @@ def main():
     threadpool_limits(limits=1)
 
     d, feats = load_from_args(args, include_ctr=True)
+    print_cohort(d, ['style / meditators vs ctr on MED epochs', 'meditators vs ctr on IMW2 epochs'])
     brab = d[d.dataset == 'braboszcz']
-    brand_med = d[(d.dataset == 'brandmeyer') & (d.condition == 'MED')].copy()
-    med_epochs = brab[(brab.condition == 'MED') & brab.matched].copy()
+    brand_med = keep_min_epochs(d[(d.dataset == 'brandmeyer') & (d.condition == 'MED')], ['MED'])
+    med_epochs = keep_min_epochs(brab[(brab.condition == 'MED') & brab.matched], ['MED'])
 
     results, chance_of, extra = [], {}, {}
 
@@ -257,7 +276,7 @@ def main():
     groups = ['CTR', 'meditator']
     ages = None
     for cond in ['MED', 'IMW2']:
-        a = brab[brab.condition == cond].copy()
+        a = keep_min_epochs(brab[brab.condition == cond], [cond])
         a['label'] = np.where(a['style'] == 'CTR', 'CTR', 'meditator')
         if ages is None:
             ages = age_table(a)

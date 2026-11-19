@@ -1,0 +1,22 @@
+file,key,old,new,change
+population_summary_final,IMW2_vs_IMW1 / braboszcz / within / logistic,0.5107238089071552,0.5207277288440741,0.010003919936918959
+population_summary_final,MED_vs_MW / brandmeyer / pooled / logistic,0.5404161222318689,0.5277052195546591,-0.012710902677209757
+population_summary_final,MED_vs_MW / brandmeyer / within / logistic,0.4609653849866947,0.4846982217826943,0.02373283679599958
+classifier_comparison_summary_final,IMW2_vs_IMW1 / braboszcz / logistic,0.5107238089071552,0.5207277288440741,0.010003919936918959
+classifier_comparison_summary_final,MED_vs_MW / brandmeyer / gaussian_nb,0.4709304562326901,0.4835304601327049,0.012600003900014811
+classifier_comparison_summary_final,MED_vs_MW / brandmeyer / knn,0.4984046232283808,0.5376402464240548,0.03923562319567403
+classifier_comparison_summary_final,MED_vs_MW / brandmeyer / logistic,0.4609653849866947,0.4846982217826943,0.02373283679599958
+classifier_comparison_summary_final,MED_vs_MW / brandmeyer / mlp,0.4655953370135242,0.4991620781306077,0.03356674111708352
+classifier_comparison_summary_final,MED_vs_MW / brandmeyer / svm_linear,0.4782421283252337,0.4937525548191497,0.015510426493915985
+classifier_comparison_summary_final,MED_vs_MW / brandmeyer / svm_rbf,0.4743206076323116,0.5023591370832456,0.028038529450934047
+style_summary_final,HYT_vs_ISY / dummy,0.4859045738715071,0.5,0.014095426128492905
+style_summary_final,HYT_vs_VIP / dummy,0.4864754154019061,0.5,0.013524584598093914
+style_summary_final,VIP_vs_ISY / dummy,0.4870475908645948,0.5,0.012952409135405185
+style_summary_final,meditators_vs_ctr_IMW2 / mlp,0.5561108871742744,0.5697669054786213,0.013656018304346929
+style_summary_final,meditators_vs_ctr_IMW2 / svm_rbf,0.5671470447778781,0.5804967524904915,0.013349707712613346
+style_summary_final,meditators_vs_ctr_IMW2_age_regressed / logistic,0.5161102155428928,0.5287422122452812,0.012631996702388348
+style_summary_final,meditators_vs_ctr_IMW2_age_regressed / mlp,0.5518399523378149,0.5653152577153312,0.013475305377516289
+style_summary_final,meditators_vs_ctr_IMW2_age_regressed / svm_rbf,0.55908533447915,0.5720639398974092,0.012978605418259237
+population_learning_curve_summary_final,brandmeyer / 3,0.4989088314040157,0.518473282963639,0.01956445155962333
+population_learning_curve_summary_final,brandmeyer / 6,0.4995644816810015,0.5197422135281401,0.020177731847138614
+population_learning_curve_summary_final,brandmeyer / 12,0.4753681042368228,0.5032413563905535,0.027873252153730654

@@ -43,8 +43,16 @@ MIDLINE = ['Fz', 'FCz', 'Cz']
 #the mind wandering label in each dataset
 MW_LABEL = {'braboszcz': 'IMW2', 'brandmeyer': 'MW'}
 
-#braboszcz participants.tsv first_session values, renamed for the tables
-ORDER_NAMES = {'meditation': 'MED-first', 'thinking': 'IMW-first'}
+#braboszcz participants.tsv first_session values, renamed for the tables.
+#two rows (sub-080 among them) spell the thinking-first value as 'thought'.
+ORDER_NAMES = {'meditation': 'MED-first', 'thinking': 'IMW-first', 'thought': 'IMW-first'}
+
+#one inclusion rule for every analysis: a subject enters an analysis only if it has
+#at least this many epochs in every condition that analysis uses. the same number
+#as the 14-channel code and standardized_differences(). this is why the n differs
+#between contrasts (e.g. med vs mw needs both states, the style analyses only med),
+#see cohort_table() / cohort_64.csv for who is in which analysis.
+MIN_EPOCHS = 5
 
 #braboszcz styles in the matched cohort
 STYLES = ['HYT', 'VIP', 'ISY']
@@ -181,10 +189,24 @@ def load_from_args(args, datasets=('braboszcz', 'brandmeyer'), include_ctr=False
     return load_features(datasets, include_ctr, args.n_brab, args.n_brand, args.n_ctr)
 
 
+def keep_min_epochs(d, conditions, min_epochs=MIN_EPOCHS):
+    #keep subjects with >= min_epochs epochs in every condition they need.
+    #conditions: one list for everyone, or a function dataset -> list of conditions
+    need = conditions if callable(conditions) else (lambda ds: conditions)
+    counts = d.groupby(['subj', 'condition']).size()
+    keep = []
+    for subj, g in d.groupby('subj'):
+        conds = need(g.dataset.iloc[0])
+        if all(counts.get((subj, c), 0) >= min_epochs for c in conds):
+            keep.append(subj)
+    return d[d.subj.isin(keep)].copy()
+
+
 def med_vs_mw(d):
     #meditation vs mind wandering: med vs imw2 for braboszcz, med vs mw for brandmeyer
     mw = d.dataset.map(MW_LABEL)
     out = d[(d.condition == 'MED') | (d.condition == mw)].copy()
+    out = keep_min_epochs(out, lambda ds: ['MED', MW_LABEL[ds]])
     out['y'] = (out.condition == 'MED').astype(int)
     return out
 
@@ -192,8 +214,41 @@ def med_vs_mw(d):
 def imw2_vs_imw1(d):
     #the label control: second vs first mind wandering run, braboszcz only
     out = d[(d.dataset == 'braboszcz') & d.condition.isin(['IMW1', 'IMW2'])].copy()
+    out = keep_min_epochs(out, ['IMW1', 'IMW2'])
     out['y'] = (out.condition == 'IMW2').astype(int)
     return out
+
+
+#which conditions each analysis needs (for the cohort table)
+ANALYSIS_CONDITIONS = {
+    'MED_vs_MW (classification, theta shift, calibration, aperiodic)':
+        lambda ds: ['MED', MW_LABEL[ds]],
+    'IMW2_vs_IMW1 (label control, braboszcz)': lambda ds: ['IMW1', 'IMW2'],
+    'style / meditators vs ctr on MED epochs': lambda ds: ['MED'],
+    'meditators vs ctr on IMW2 epochs': lambda ds: ['IMW2'],
+}
+
+
+def cohort_table(d):
+    #one row per subject: epochs per condition and whether it is in each analysis
+    counts = d.groupby(['subj', 'condition']).size().unstack(fill_value=0)
+    info = d.drop_duplicates('subj').set_index('subj')[['dataset', 'subject', 'style']]
+    t = info.join(counts).fillna(0)
+    for name, need in ANALYSIS_CONDITIONS.items():
+        t[name] = [all(t.loc[s].get(c, 0) >= MIN_EPOCHS for c in need(t.loc[s, 'dataset']))
+                   for s in t.index]
+    return t.reset_index()
+
+
+def print_cohort(d, analyses=None):
+    #n per dataset x analysis, so every log shows the same numbers
+    t = cohort_table(d)
+    names = analyses or list(ANALYSIS_CONDITIONS)
+    print(f'\ncohort (>= {MIN_EPOCHS} epochs in every condition an analysis uses)')
+    for name in names:
+        n = t[t[name]].groupby('dataset').subj.nunique().to_dict()
+        print(f'  {name}: {n}')
+    return t
 
 
 #stats

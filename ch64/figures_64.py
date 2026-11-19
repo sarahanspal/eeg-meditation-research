@@ -14,6 +14,7 @@
 #
 #run from the repo root:
 #.venv/bin/python ch64/figures_64.py
+import argparse
 import warnings
 
 import matplotlib
@@ -29,6 +30,9 @@ from common_64 import BANDS, OUT, bootstrap_ci
 
 FIG_DIR = OUT / 'figures'
 FIG_DIR.mkdir(parents=True, exist_ok=True)
+
+#added to the input file names and the figure names (--suffix _final)
+SUFFIX = ''
 
 #colors (reference palette from the dataviz guide, light mode)
 INK = '#0b0b0b'
@@ -83,9 +87,9 @@ def set_style():
 
 def save(fig, name):
     for ext in ('pdf', 'png'):
-        fig.savefig(FIG_DIR / f'{name}.{ext}', dpi=300, bbox_inches='tight')
+        fig.savefig(FIG_DIR / f'{name}{SUFFIX}.{ext}', dpi=300, bbox_inches='tight')
     plt.close(fig)
-    print(f'saved {name}.pdf / .png')
+    print(f'saved {name}{SUFFIX}.pdf / .png')
 
 
 def panel_letter(ax, letter, x=-0.12, y=1.06):
@@ -390,26 +394,32 @@ def fig_confusion(confusion, summary):
 
 
 def main():
+    global SUFFIX
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--suffix', default='', help='for example _final: read the _final result files')
+    SUFFIX = parser.parse_args().suffix
     set_style()
     warnings.filterwarnings('ignore', category=RuntimeWarning)
 
+    #the theta files are not re-filtered, so they are read without the suffix
     signs_file = OUT / 'theta_sign_consistency.csv'
     if signs_file.exists():
         fig_topomaps(pd.read_csv(signs_file))
 
-    lc_file = OUT / 'population_learning_curve_summary.csv'
+    lc_file = OUT / f'population_learning_curve_summary{SUFFIX}.csv'
     if lc_file.exists():
-        fig_learning_curve(pd.read_csv(lc_file), pd.read_csv(OUT / 'population_summary.csv'))
+        fig_learning_curve(pd.read_csv(lc_file), pd.read_csv(OUT / f'population_summary{SUFFIX}.csv'))
 
-    reps_file = OUT / 'calibration_subject_reps.csv'
+    reps_file = OUT / f'calibration_subject_reps{SUFFIX}.csv'
     if reps_file.exists():
-        fig_calibration(pd.read_csv(reps_file), pd.read_csv(OUT / 'calibration_meditation_specific_gain.csv'))
+        fig_calibration(pd.read_csv(reps_file),
+                        pd.read_csv(OUT / f'calibration_meditation_specific_gain{SUFFIX}.csv'))
     else:
         print('calibration results not there yet, skipped fig3')
 
-    conf_file = OUT / 'style_confusion_matrices.csv'
+    conf_file = OUT / f'style_confusion_matrices{SUFFIX}.csv'
     if conf_file.exists():
-        fig_confusion(pd.read_csv(conf_file), pd.read_csv(OUT / 'style_summary.csv'))
+        fig_confusion(pd.read_csv(conf_file), pd.read_csv(OUT / f'style_summary{SUFFIX}.csv'))
     print(f'figures in {FIG_DIR}')
 
 
